@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="html">
+	
+    <head>
+    	<title> Date Night </title>
+      	<meta charset="utf-8" name="viewport">
+    		<script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
+    		<script src="https://maps.google.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU"></script>
+<!--     		<script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+				<script src="jquery.geocomplete.js"></script>
+ -->        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="../assets/js/settings.js"></script>
+   </head>
+
+   <body class="body">
+   	<div class="settings-body">
+   		<div class="location-con">
+   			<div class="location-q"> Location: </div>
+
+
+
+   			<div class="location-a" id="loc"> My Current Location </div>
+   		</div>
+
+   		<div class="distance-con">
+   			<div class="max-form">
+	   			<div class="max-distance"> Maximum Distance (km): </div>
+					<form class="form">
+						<input class="input" type="range" name="foo" min="0" max="150" onchange="updateTextInput(this.value, 'textInput1');">
+						<input class="field" type="text" id="textInput1" value="">
+					</form>
+				</div>
+   		</div>
+
+   		<div class="age-con">
+   			<div class="age-form">
+	   			<div class="age-range"> Age Range: </div>
+	   			<form class="form">
+							<input class="input" type="range" name="foo" min="18" max="70" onchange="updateTextInput(this.value, 'textInput2');">
+							<input class="field" type="text" id="textInput2" value="">
+					</form>
+				</div>
+   		</div>
+
+   		<div class="notif-con"> 
+   			<!--<div class="notif-tog">-->
+	   			<div class="notif"> Notifications: </div>
+	   				
+	   				<div class="new-messages">
+	   					<div class="text-check-1">
+				   			<div class="new-matches"> New Matches </div>
+				   			<label class="switch">
+								  <input type="checkbox">
+								  <span class="slider round"></span>
+								</label>
+							</div>
+				   			
+				   		<div class="text-check-2">
+				   			<div class="messages"> Messages </div>
+								<label class="switch">
+								  <input type="checkbox">
+								  <span class="slider round"></span>
+								</label>
+							</div>
+
+						</div>
+				
+				</div>
+	   	</div>
+
+   	</div>
+   </body>
+
+</html>
+

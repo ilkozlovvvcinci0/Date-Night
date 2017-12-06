@@ -1,0 +1,872 @@
+/* INDEX.HTML */
+
+.html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.body {
+	margin: 0;
+}
+
+.index-body-con {
+	display: flex;
+	flex-direction: column;
+	background-image: url(date-pic.jpg); 
+	background-size: cover; 
+	height: 100%;
+}
+
+.main-header-btns {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 70%;
+}
+
+.btn-con {
+	display: flex;
+	flex-direction: column;
+	width: 12%;
+	margin: 50px 0 0 50px;
+}
+
+.sign-up {
+	display: flex;
+  height: 11%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  font-family: geneva;
+  border-radius: 10px;
+  border-width: 0px;
+  background-color: #777;
+}
+
+.login {
+	display: flex;
+  height: 11%;
+  text-align: center;
+  padding: 0px 0px 0px 0px;
+  font-size: 1.5em;
+  font-family: geneva;
+  border-radius: 10px;
+  border-width: 0px;
+  background-color: #777;
+}
+
+.sign-up li a {
+	text-decoration: none;
+}
+
+.login li a {
+	text-decoration: none;
+}
+
+.date-night {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 70%;
+  height: 0%;
+  font-family: Brush Script Std;
+  font-size: 4.3em;
+  color: #990000;
+}
+
+/* LOGIN.HTML */
+
+.login-con {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background-color: #666;
+}
+
+.login-form {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  font-family: geneva;
+  border-width: 0px;
+}
+
+.log-user-con {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+}
+
+.log-user-text {
+	font-size: 1.6em;
+}
+
+
+.login-user {
+	width: 30%;
+	height: 40%;
+	font-family: geneva;
+	font-size: 1.3em;
+	font-weight: 150;
+	margin: 5px 0px 0px 25px;
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 10px;
+}
+
+.log-pass-con {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+}
+
+.pass-text {
+	font-size: 1.6em;
+}
+
+.login-pass {
+	width: 30%;
+	height: 40%;
+	font-family: geneva;
+	font-size: 1.3em;
+	font-weight: 150;
+	margin: 5px 0px 0px 25px;
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 10px;
+}
+
+.log-btn-con {
+	display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 45px 200px 0 0;
+  width: 67%;
+  height: 9%
+}
+
+.log-err-mes {
+	display: flex;
+	margin: 0 30px 0 0; 
+	width: 50%;
+	font-style: italic; 
+	font-size: 1.5em;
+	color: #cd0000; 
+}
+
+.login-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 20%;
+	font-size: 1.6em;
+	border-radius: 10px;
+  border-width: 0px;
+  color: #990000;
+}
+
+/* SIGN-UP.HTML */
+
+.sign-up-con {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	background-color: #666;
+}
+
+.sign-up-form {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.8em;
+  font-family: geneva;
+  border-width: 0px;
+}
+
+.user-con {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+}
+
+.su-user-text {
+	font-size: 1em;
+}
+
+.sign-up-username {
+	width: 30%;
+	height: 37%;
+	font-family: geneva;
+	font-size: 0.8em;
+	font-weight: 150;
+	margin: 5px 0px 0px 25px;
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 10px;
+}
+
+.email-con {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+}
+
+.sign-up-email {
+	width: 35%;
+	height: 37%;
+	font-family: geneva;
+	font-size: 0.8em;
+	font-weight: 150;
+	margin: 5px 0px 0px 25px;
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 10px;
+}
+
+.pass-con {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+}
+
+.signUpPassword {
+	width: 31%;
+	height: 37%;
+	font-family: geneva;
+	font-size: 0.8em;
+	font-weight: 150;
+	margin: 5px 0px 0px 25px;
+	padding: 0px;
+	border-width: 0px;
+	border-radius: 10px;
+}
+
+.dob-con {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 4%;
+}
+
+.dob {
+	display: flex;
+	margin: 0 50px 0 0;
+}
+
+.month-day {
+	display: flex;
+  flex-direction: row;
+  margin: 0 50px 0 0;
+  border: 0px;
+  font-size: 0.7em;
+}
+
+.month {
+	display: flex;
+  flex-direction: row;
+  margin: 0 50px 0 0;  
+  font-size: 0.7em;
+}
+
+.year {
+	display: flex;
+  flex-direction: row;
+  border: 0px;
+  font-size: 0.7em;
+}
+
+.seek-con {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 4%;
+  margin: 60px 0 0 0;
+}
+
+.I-am {
+	display: flex;
+	margin: 0 30px 0 0;
+}
+
+.man-class {
+	font-size: 0.7em; 
+	margin: 0 30px 0 0;
+	border: 0px;
+}
+
+.seeking {
+	display: flex;
+	margin: 0 20px 0 0;
+}
+
+.wom-class {
+	font-size: 0.7em; 
+	margin: 0 30px 0 0;
+	border: 0px;
+}
+.sUn-btn-con {
+	display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 75px 0 0 0;
+  width: 67%;
+  height: 8.5%
+}
+
+.err-mes {
+	display: flex;
+	margin: 0; 
+	width: 50%;
+	font-style: italic; 
+	color: #cd0000; 
+}
+
+.sign-up-now {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 30%;
+	font-size: 0.95em;
+	border-radius: 10px;
+  border-width: 0px;
+  color: #990000;
+}
+
+/* PROFILE-PAGE.HTML */
+
+.profile-header {
+	display: flex;
+	max-width: 100%;
+	justify-content: space-between;
+	margin: 30px 0px 0px 0px;
+	font-family: geneva;
+	color: #999;
+}
+
+.profile-icon {
+	display: flex;
+	flex-direction: column;
+	width: 15%;
+	text-align: center;
+}
+
+.profile-icon .icon {
+	font-size: 3.4em;
+}
+
+.fa:hover {
+	color: black;
+}
+
+.h-ref {
+	text-decoration: none;
+}
+
+.h-ref:visited {
+	color: #999;
+}
+
+.profile-body {
+	display: flex;
+	max-width: 100%;
+	justify-content: center;
+	font-family: geneva;
+	word-spacing: 0.2em;
+}
+
+.img-mes{
+	display: flex;
+	flex-direction: column;
+}
+
+#hiMessage {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0px 0px 50px 0px;
+}
+
+img.profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-footer {
+	display: flex;
+	justify-content: center;
+	max-width: 100%;
+	margin-bottom: 50px;
+}
+
+.get-swiping-button {
+	width: 220px;
+	height: 55px;
+	margin: 50px 0px 0px 0px;
+	padding: 0px;
+	border-radius: 10px;
+	border-width: 0px;
+  font-size: 1.8em;
+  font-family: geneva;
+  color: #fff;
+  background-color: #990000;
+}
+
+/* SWIPE.HTML */
+
+.swipe-container {
+	display: flex;
+	max-width: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 50px 0px 0px 0px;
+	font-family: geneva;
+}
+
+.swipe-body {
+	display: flex;
+	max-width: 100%;
+	justify-content: center;
+}
+
+.profile-pic-container {
+	background-color: black;
+	height: 525px;
+  width: 285px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.fa.fa-times {
+	margin-right: 50px;
+}
+
+.fa.fa-check {
+	margin-left: 50px;
+}
+
+.fa.fa-times:hover {
+	color: red;
+}
+
+.fa.fa-check:hover {
+	color: green;
+}
+
+/* slider */
+
+.swipe-slider {
+	width: 470px;
+}
+
+.slick-slider {
+	display: flex;
+}
+
+/* MATCH.HTML */
+
+.html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.body {
+	margin: 0;
+}
+
+.match-container {
+	display: flex;
+	flex-direction: column;
+  height: 100%;
+	background-image: url(match.jpg);
+	background-size: cover;
+}
+
+.match-header {
+	display: flex;
+	width: 100%;
+	margin: 50px 0px 0px 0px;
+}
+
+.match-msg {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: brush script std;
+  font-size: 4.5em;
+}
+
+.match-body {
+	display: flex;
+	height: 59%;
+	margin-top: 35px;
+}
+
+.match-pics {
+	display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.match-pic-container {
+	background-color: black;
+	height: 350px;
+  width: 210px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.match-footer {
+	display: flex;
+}
+
+.match-buttons {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+}
+
+.keep-swiping {
+	width: 180px;
+	height: 45px;
+	border: 0;
+	border-radius: 10px;
+	padding: 0;
+	font-family: arial;
+	font-size: 1.4em;
+	word-spacing: 0.2em;
+	background-color: #c1bfbf;
+}
+
+.send-message {
+	width: 200px;
+	height: 45px;
+	border: 0;
+  border-radius: 10px;
+  padding: 0;
+  font-family: arial;
+  font-size: 1.4em;
+  word-spacing: 0.2em;
+  background-color: #c1bfbf;
+}
+
+/* SETTINGS.HTML */
+
+.html, body {
+	width: 100%;
+	height: 100%;
+}
+
+.body {
+	margin: 0;
+}
+
+.settings-body {
+	display: flex;
+	flex-direction: column;
+	height: 80%;
+	margin: 115px 100px 0px 100px;
+	font-family: geneva;
+	font-size: 1.2em;
+}
+
+.location-con {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+.location-a {
+	color: #999;
+}
+
+.distance-con {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 55px;
+}
+
+.max-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.max-distance {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.form { 
+	display: flex;
+  align-items: flex-start;
+  margin-top: 10px;
+}
+
+.form .input {
+	width: 515px;
+	margin-right: 20px;
+}
+
+.form .field {
+	font-family: arial;
+  font-size: 0.9em;
+  width: 30px;
+  text-align: center;
+}
+
+.age-con {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 55px;
+}
+
+.age-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.age-range {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.notif-con {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+/*.notif-tog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}*/
+
+.notif {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.new-messages {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.new-matches {
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+}
+ 
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 10px 0px 0px 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #0000dd;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #0000dd;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* EDIT-PROFILE.HTML */
+
+.edit-body {
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	height: 80%;
+	margin: 85px 100px 0px 100px;
+	text-align: center;
+	font-family: geneva;
+	font-size: 1.2em;
+}
+
+.about-con {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-area {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+	margin: 35px 0 0 0;
+	font-family: arial;
+	font-size: 1em;
+	/* sort out font-size issue */
+}
+
+.work-con {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px 0 0 0;
+}
+
+.ed-con {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 35px 0 0 0;
+}
+
+/* SEND-MESSAGE.HTML */
+
+.sm-con {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	margin: 0px 0 0 40px;
+}
+
+.ta-btn {
+	display: flex;
+	flex-direction: column;
+  text-align: center;
+}
+
+.btn-send {
+	display: flex;
+	justify-content: center;
+}
+
+.send {
+  display: flex;
+  width: 120px;
+  height: 50px;
+	justify-content: center;
+  border-radius: 10px;
+  font-family: arial;
+  font-size: 1.6em;
+  background-color: #329832;
+  color: #fff;
+}
+
+.footer-btns {
+	display: flex;
+  justify-content: space-around;
+  margin: 50px 0 0 0;
+}
+
+.view-profile {
+	width: 180px;
+	height: 45px;
+	border: 0;
+	border-radius: 10px;
+	padding: 0;
+	font-family: arial;
+	font-size: 1.4em;
+	word-spacing: 0.2em;
+	background-color: #c1bfbf;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
