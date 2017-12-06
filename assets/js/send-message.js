@@ -6,5 +6,3 @@ $(document).ready(function() {
 function goSwipe() {
   window.location.href = "swipe.html?username=" + getUsername();
 }
-
-
