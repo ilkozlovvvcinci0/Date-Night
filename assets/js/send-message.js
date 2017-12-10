@@ -1,8 +1,17 @@
 $(document).ready(function() {
-	localStorage.setItem("message", "Heeyyy! I'd like to buy you some tacos...");	
-	document.getElementById("text-area").innerHTML = localStorage.getItem("message");
+	$("#send-message").click(function() {
+		localStorage.setItem('message', $("#text-area").val());
+	});
 });
 
-function goSwipe() {
-  window.location.href = "swipe.html?username=" + getUsername();
+function goMessages() {
+  window.location.href = "messages.html?username=" + getUsername();
 }
+
+function getUsername() {
+	let urlParams = new URLSearchParams(window.location.search);
+	return urlParams.get("username");
+}
+
+
+

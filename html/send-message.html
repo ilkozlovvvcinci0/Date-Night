@@ -7,17 +7,19 @@
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="../assets/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../assets/js/send-message.js"></script>
-
   </head>
 
   <body class="body">
-  	
-  	<div class="sm-con">
+    <div class="sm-con" id=sm-con>
       <div class="sm-main-body">
         <div class="match-img">
 
 
         </div>
+        <div class="msg-con">
+          <button class="messages" id="msg" onclick="goMessages()"> Messages </button>
+        </div>
+
         <div class="ta-btn">
           <textarea class="text-area" id="text-area" rows="15" cols="100"></textarea>
           <div class="btn-send"><button class="send" id="send-message"> Send </button></div>
@@ -29,8 +31,12 @@
           <button class="view-profile" id="vp" onclick=""> View Profile </button>
         </div>
       </div>
+      
       </div>
     </div>
-
+  
   </body>
 </html>
+
+
+
