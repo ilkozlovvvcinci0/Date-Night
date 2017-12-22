@@ -562,7 +562,7 @@ img.profile-pic {
 	border: 0;
 	border-radius: 10px;
 	padding: 0;
-	font-family: arial;
+	font-family: geneva;
 	font-size: 1.4em;
 	word-spacing: 0.2em;
 	background-color: #c1bfbf;
@@ -574,7 +574,7 @@ img.profile-pic {
 	border: 0;
   border-radius: 10px;
   padding: 0;
-  font-family: arial;
+  font-family: geneva;
   font-size: 1.4em;
   word-spacing: 0.2em;
   background-color: #c1bfbf;
@@ -789,6 +789,17 @@ input:checked + .slider:before {
 	/* sort out font-size issue */
 }
 
+.text-area2 {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+	margin: 35px 0 0 0;
+	font-family: arial;
+	font-size: 1em;
+	/* sort out font-size issue */
+}
+
 .work-con {
 	display: flex;
   flex-direction: column;
@@ -830,7 +841,7 @@ input:checked + .slider:before {
 	border: 0;
 	border-radius: 10px;
 	padding: 0;
-	font-family: arial;
+	font-family: geneva;
 	font-size: 1.4em;
 	word-spacing: 0.2em;
 	background-color: #c1bfbf;
@@ -853,7 +864,7 @@ input:checked + .slider:before {
   height: 50px;
 	justify-content: center;
   border-radius: 10px;
-  font-family: arial;
+  font-family: geneva;
   font-size: 1.6em;
   background-color: #329832;
   color: #fff;
@@ -873,7 +884,7 @@ input:checked + .slider:before {
 	border: 0;
 	border-radius: 10px;
 	padding: 0;
-	font-family: arial;
+	font-family: geneva;
 	font-size: 1.4em;
 	word-spacing: 0.2em;
 	background-color: #c1bfbf;
@@ -884,6 +895,29 @@ input:checked + .slider:before {
 .mes-con {
 	display: flex;
 	flex-direction: column;
+	margin: 50px 0;
+}
+
+.mes-title-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: geneva;
+  font-size: 1.4em;
+}
+
+.mes-main-body {
+	display: flex;
+	justify-content: center;
+	margin: 50px 0;
+}
+
+.sender {
+	font-family: geneva;
+}
+
+#rec-mes {
+	margin: 35px 0 0 50px;
 }
 
 

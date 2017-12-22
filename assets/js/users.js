@@ -20,9 +20,3 @@ function getUsername() {
 	let urlParams = new URLSearchParams(window.location.search);
 	return urlParams.get("username");
 }
-
-function getMatchUsername() {
-	let urlParams = new URLSearchParams(window.location.search);
-	return urlParams.get("username"[matches]);
-}
-
