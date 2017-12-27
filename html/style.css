@@ -906,20 +906,31 @@ input:checked + .slider:before {
   font-size: 1.4em;
 }
 
-.mes-main-body {
+.mes-par {
 	display: flex;
-	justify-content: center;
-	margin: 50px 0;
+	flex-direction: column;
 }
 
 .sender {
+	display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    width: 35%;
+    align-items: center;
+}
+
+.mes-head {
 	font-family: geneva;
+	font-size: 1.1em;
 }
 
-#rec-mes {
-	margin: 35px 0 0 50px;
+.mess {
+	display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    width: 35%;
+    align-items: center;
 }
-
 
 
 
