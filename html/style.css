@@ -694,7 +694,7 @@ img.profile-pic {
   flex-direction: column;
 }
 
-.messages {
+.set-messages {
   display: flex;
   flex-direction: column;
 }
@@ -892,13 +892,13 @@ input:checked + .slider:before {
 
 /* MESSAGES.HTML */
 
-.mes-con {
+.msg-con {
 	display: flex;
 	flex-direction: column;
 	margin: 50px 0;
 }
 
-.mes-title-con {
+.msg-title-con {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -906,31 +906,29 @@ input:checked + .slider:before {
   font-size: 1.4em;
 }
 
-.mes-par {
+.msg-list {
 	display: flex;
-	flex-direction: column;
+  flex-direction: column;
+  margin-top: 80px;
 }
 
-.sender {
+.msg-parent {
 	display: flex;
-    flex-direction: column;
-    margin: 50px 0;
-    width: 35%;
-    align-items: center;
+	flex-direction: row;
+	justify-content: center;
+  margin-bottom: 80px;
 }
 
-.mes-head {
+.msg {
+	display: flex;
+  align-items: center;
 	font-family: geneva;
 	font-size: 1.1em;
 }
 
-.mess {
-	display: flex;
-    flex-direction: column;
-    margin: 50px 0;
-    width: 35%;
-    align-items: center;
-}
+
+
+
 
 
 
