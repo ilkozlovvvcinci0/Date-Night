@@ -6,13 +6,15 @@ $(document).ready(function() {
 
 	$('.swipe-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
 		let difference = nextSlide - currentSlide;
-
 		if (difference == 1 || difference <= -2) {
 			onTick(currentSlide);
 		}
-		
 	});
 });
+
+	function vup(profileUser) {
+  window.location.href = `view-user-profile.html?username=${getUsername()}&profileUser=${profileUser}`;
+}
 
 function onTick(currentSlide) {
 	let slideUser = {

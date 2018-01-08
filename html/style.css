@@ -434,6 +434,55 @@ img.profile-pic {
   background-color: #990000;
 }
 
+/* VIEW-USER-PROFILE.HTML */
+
+.vup-header {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  font-family: geneva;
+  font-size: 1.2em;
+  line-height: 1.9em;
+}
+
+.name-age-con {
+	display: flex;
+  margin-bottom: 5px;
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.name {
+	display: flex;
+}
+
+.age {
+	display: flex;
+	margin-left: 10px;
+}
+
+.occupation {
+	display: flex;
+}
+
+.distance {
+	display: flex;
+}
+
+.vup-main-body {
+	display: flex;
+  align-items: center;
+  font-family: geneva;
+  font-size: 1.2em;
+  margin: 100px 250px;
+  line-height: 1.9em;
+}
+
+.about {
+	display: flex;
+}
+
 /* SWIPE.HTML */
 
 .swipe-container {
@@ -457,6 +506,21 @@ img.profile-pic {
   width: 285px;
   overflow: hidden;
   border-radius: 30px;
+}
+
+.i-btn-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.i-btn {
+	display: flex;
+  font-family: serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bolder;
+  border-radius: 5px;
 }
 
 .fa.fa-times {
@@ -826,7 +890,7 @@ input:checked + .slider:before {
 	margin: 0px 0 0 40px;
 }
 
-.msg-con {
+.s-msg-con {
 	display: flex;
 	justify-content: center;
 	margin: 0 0 40px 0;
