@@ -954,6 +954,15 @@ input:checked + .slider:before {
 	background-color: #c1bfbf;
 }
 
+.from-user {
+	font-style: italic;
+	margin-right: 20px;
+}
+
+.msg-margin {
+	margin-right: 33px;
+}
+
 /* MESSAGES.HTML */
 
 .msg-con {

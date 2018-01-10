@@ -5,8 +5,7 @@ $(document).ready(function() {
 	for (let i = 0; i < messages.length; i++) {
     msgList.append (`
       <div class="msg-parent"> 
-        <div class="msg"> ${messages[i]}  </div>
+        <div class="msg" id="msg"> ${messages[i]} </div>
       </div>`)
 	}
 });
-

@@ -2,7 +2,8 @@ $(document).ready(function() {
 	$("#send-message").click(function() {
 		let sendMessagesKey = "message_for_" + getRecipient();
 		let messages = JSON.parse(localStorage.getItem(sendMessagesKey));
-		messages.push(`<div><div style=\"font-style: italic;\">from: ${getUsername()}</div></div>` + "&nbsp" + "-" + "&nbsp" + "&nbsp" + "&nbsp" + $("#text-area").val());
+		messages.push(`<div class="from-user"> from: ${getUsername()} </div>` + "&nbsp" + "-"
+		+ `<div class="msg-margin"> </div>` + $("#text-area").val());
 		localStorage.setItem(sendMessagesKey, JSON.stringify(messages));
 	});
 });
@@ -15,7 +16,3 @@ function getRecipient() {
 function goMessages() {
   window.location.href = "messages.html?username=" + getUsername();
 }
-
-
-
-
