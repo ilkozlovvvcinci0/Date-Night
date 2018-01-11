@@ -16,3 +16,12 @@ function getRecipient() {
 function goMessages() {
   window.location.href = "messages.html?username=" + getUsername();
 }
+
+function vup(profileUser) {
+  window.location.href = `view-user-profile.html?profileUser=${profileUser}`
+}
+
+function getMatchUsername() {
+	let urlParams = new URLSearchParams(window.location.search);
+	return urlParams.get("match");
+}
