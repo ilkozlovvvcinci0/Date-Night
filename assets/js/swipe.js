@@ -10,10 +10,15 @@ $(document).ready(function() {
 			onTick(currentSlide);
 		}
 	});
+
+	function msgAlert() {
+  	let alert = {notification: "alert('Hey! You've got a new message! Go to messages to view');"};
+	}
+
 });
 
-	function vup(profileUser) {
-  window.location.href = `view-user-profile.html?username=${getUsername()}&profileUser=${profileUser}`;
+function vup(profileUser) {
+  window.location.href = `view-user-profile.html?username=${getUsername()}&profileUser=${profileUser}`
 }
 
 function onTick(currentSlide) {

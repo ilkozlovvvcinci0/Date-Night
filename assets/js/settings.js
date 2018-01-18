@@ -21,11 +21,6 @@ function showPosition(position) {
     "<br>Longitude: " + position.coords.longitude; 
 }
 
-
-
-
-
-
 function modifyOffset() {
     var el, newPoint, newPlace, offset, siblings, k;
     width    = this.offsetWidth;

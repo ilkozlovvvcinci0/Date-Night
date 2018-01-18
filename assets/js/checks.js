@@ -9,7 +9,7 @@ function checkUsername(e) {
 
 function checkUsernameAvailability(e) {
    var username = document.getElementById("username").value;
-   var takenUsername = ["Meredith35","Brady9", "Mat8", "WaveyDon100",]; 
+   var takenUsername = ["Meredith35","Brady9", "Mat8", "WaveyDon100", "Kesha90", "Lauren87", "Fran3"]; 
    if (takenUsername.indexOf(username) >= 0) {
       InsertErrorMessageIntoPage("This username is already in use! Please choose another!");
       return false;
@@ -28,7 +28,7 @@ function checkEmail(e) {
 
 function checkEmailAvailability(e) {
    var email = document.getElementById("email").value;
-   var takenEmails = ["ab@gmail.com","mat@gmail.com", "b1@hotmail.co.uk", "jjj@yahoo.com",]; 
+   var takenEmails = ["ab@gmail.com","mat@gmail.com", "b1@hotmail.co.uk", "jjj@yahoo.com", "ksings90@gmail.com", "locounty@yahoo.com", "franpers@googlemail.com"]; 
    if (takenEmails.indexOf(email) >= 0) {
       InsertErrorMessageIntoPage("This email is already in use! Please choose another!");
       return false;

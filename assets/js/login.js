@@ -1,7 +1,7 @@
 function onWindowLoad() {
-	document.getElementById('login').addEventListener('submit', function(e){
+	document.getElementById('login').addEventListener('submit', function(e) {
 		checkForm(e);
-    });
+  });
 }
 
 function onLoad() {
@@ -23,16 +23,10 @@ function InsertErrorMessageIntoPage(content)
 }
 
 function checkForm(e) {
-	
-  /*RemoveErrorMessageFromPage();*/
-
   if (!checkUsername(e) || !checkPassword(e)) { 
     e.preventDefault();
   }
 }
-
-	
-onLoad();
 
 
 

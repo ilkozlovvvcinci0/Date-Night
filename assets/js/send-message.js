@@ -6,6 +6,10 @@ $(document).ready(function() {
 		+ `<div class="msg-margin"> </div>` + $("#text-area").val());
 		localStorage.setItem(sendMessagesKey, JSON.stringify(messages));
 	});
+
+	// $("#send-message").click(function() {
+	// 	window.location.href = "messages.html?recipient=" + getRecipient();
+	// });
 });
 
 function getRecipient() {
@@ -14,7 +18,15 @@ function getRecipient() {
 }
 
 function goMessages() {
-  window.location.href = "messages.html?username=" + getUsername();
+  window.location.href = "messages.html?recipient=" + getRecipient();
+}
+
+// function viewMsg() {
+//   window.location.href = "messages.html?username=" + getRecipient();
+// }
+
+function goSwipe() {
+	window.location.href = "swipe.html?username=" + getUsername();
 }
 
 function vup(profileUser) {
@@ -25,3 +37,4 @@ function getMatchUsername() {
 	let urlParams = new URLSearchParams(window.location.search);
 	return urlParams.get("match");
 }
+	

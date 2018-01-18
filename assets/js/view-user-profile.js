@@ -10,12 +10,12 @@ $(document).ready(function() {
   	`)
 
   vupMainBody.append (`
-  	<div class="about-me"> ${getUserAboutMe(getProfileUser)} </div>
+  	<div class="about-me"> ${getUserAboutMe(getProfileUser())} </div>
   	`)
 });
 
 function getProfileUser() {
-	let urlParams = new URLSearchParams(window.location.search);
-	return urlParams.get("profileUser");
+  let urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get("profileUser");
 }
-		
+
