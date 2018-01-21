@@ -1,0 +1,15 @@
+{
+  "name": "date-night",
+  "version": "1.0.0",
+  "description": "Date night is the most awesomest dating page.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

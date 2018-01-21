@@ -534,12 +534,24 @@ img.profile-pic {
   border-radius: 5px;
 }
 
+
+
+/* cross & tick */
+
 .fa.fa-times {
-	margin-right: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+    font-size: 3em;
+    color: red;
 }
 
 .fa.fa-check {
-	margin-left: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-size: 3em;
+    color: green;
 }
 
 .fa.fa-times:hover {
