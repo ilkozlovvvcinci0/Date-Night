@@ -8,7 +8,6 @@ $(document).ready(function() {
         <div class="msg" id="msg"> ${messages[i]} </div>
       </div>`)
 	}
-	window.location.href = "new-messages.html?username" + getUsername();
 });
 
 
