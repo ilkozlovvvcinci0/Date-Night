@@ -1,21 +1,29 @@
 import React, { Component } from 'react';
-import './App.css';
+import Home from './Home'
+import './App.css'; 
+import SignUp from './Sign-Up'; 
+import Login from './Login'; 
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+
   render() {
     return (
-      <div className="App">
-        <div className="btn-con">
-          <button className="sign-up"> 
-            <li><a href="sign-up.html"> Sign Up </a></li>
-          </button>
-
-          <button className="login"> 
-            <li><a href="login.html"> Login </a></li>
-          </button>
+      <Router>
+        <div className="app">
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/sign-up" component={SignUp}/>}
+          <Route exact path="/login" component={Login}/>}
         </div>
-        <div className="date-night"> Date Night </div>
-      </div>
+      </Router>
     );
   }
 }
