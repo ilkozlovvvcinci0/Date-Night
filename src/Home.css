@@ -1,0 +1,74 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  background-image: url(img/date-pic.jpg); 
+  background-size: cover; 
+  height: 100%;
+}
+
+.btn-con {
+  display: flex;
+  flex-direction: column;
+  width: 11%;
+  margin: 50px 0 0 50px;
+}
+
+.sign-up {
+  display: flex;
+  height: 35%;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0px;
+  font-size: 1.5em;
+  font-family: geneva;
+  border-radius: 10px;
+  border-width: 0px;
+  background-color: #777;
+}
+
+.sign-up li {
+  list-style: none;
+}
+
+.sign-up li a {
+  margin-left: 31.5px;
+  color: #000;
+}
+
+.login {
+  display: flex;
+  height: 35%;
+  text-align: center;
+  padding: 0px;
+  font-size: 1.5em;
+  font-family: geneva;
+  border-radius: 10px;
+  border-width: 0px;
+  background-color: #777;
+  color: #777;
+}
+
+.sign-up li a {
+  text-decoration: none;
+}
+
+.login li {
+  margin-left: 11px;
+}
+
+.login li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.date-night {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 70%;
+  height: 0%;
+  font-family: Brush Script Std;
+  font-size: 4.3em;
+  color: #990000;
+}
