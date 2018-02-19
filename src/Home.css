@@ -35,7 +35,7 @@
   color: #000;
 }
 
-.login {
+.home .login {
   display: flex;
   height: 35%;
   text-align: center;
