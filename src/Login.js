@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Login.css';
-{/*import Checks from './Checks';*/}
 
 class Login extends Component {
   constructor(props) {

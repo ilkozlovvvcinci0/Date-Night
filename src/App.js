@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import Home from './Home'
 import './App.css'; 
 import Checks from './Checks'; 
-import SignUp from './Sign-Up'; 
 import Login from './Login'; 
+import SignUp from './SignUp'; 
 import ProfilePage from './ProfilePage'; 
 import {
   BrowserRouter as Router,
@@ -22,8 +22,8 @@ class App extends Component {
         <div className="app">
           <Route exact path="/" component={Home}/>
           <Route exact path="/checks" component={Checks}/>
-          <Route exact path="/sign-up" component={SignUp}/>
           <Route exact path="/login" component={Login}/>
+          <Route exact path="/sign-up" component={SignUp}/>
           <Route exact path="/profile-page" component={ProfilePage}/>
         </div>
       </Router>
