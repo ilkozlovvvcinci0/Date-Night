@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import './ProfilePage.css'; 
-let FontAwesome = require('react-fontawesome');
+import FontAwesome from 'react-fontawesome'
+import faStyles from 'font-awesome/css/font-awesome.css'
 
 class ProfilePage extends Component {
   constructor(props) {
     super(props);
-      this.state = {
-        FontAwesome
-      };
-      
-  
+      this.state = {};
   }
 
   render() {
@@ -40,7 +37,7 @@ class ProfilePage extends Component {
           <div className="img-mes">
             <div id="hiMessage"></div> 
             <div className="profile-pic-container">
-              <img src={ require('./img/brady.jpg') } className="profile-pic" id="display-pic" />
+              <img src={ require('./img/brady.jpg') } className="profile-pic" id="display-pic" alt="" />
             </div>
           </div>
         </div>

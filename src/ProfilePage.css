@@ -28,11 +28,6 @@
 	word-spacing: 0.2em;
 }
 
-.img-mes{
-	display: flex;
-	flex-direction: column;
-}
-
 #hiMessage {
   font-size: 2.5em;
   text-align: center;
