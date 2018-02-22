@@ -15,18 +15,16 @@ class ProfilePage extends Component {
         <div className="profile-header">
           
           <div className="profile-icon"> 
+            <FontAwesome name="cog" size="4x" /> 
             <div> Settings </div>
           </div>
 
           <div className="profile-icon">  
-            <FontAwesome
-              className='super-crazy-colors'
-              name='rocket'
-              size='2x'
-            /> 
+            <FontAwesome name="user" size="4x" /> 
           </div>
 
           <div className="profile-icon">                       
+            <FontAwesome name="pencil" size="4x" /> 
             <div> Edit Profile </div>
           </div>
 

@@ -64,6 +64,7 @@ class Login extends Component {
 
 		checkUsername(this.state.username);
 		checkPassword(this.state.password);
+		// TODO: Don't redirect if username and password are wrong!
 		console.log("Redirect us to profile-page...");
 		this.props.history.push("/profile-page")
     event.preventDefault();
@@ -90,9 +91,6 @@ class Login extends Component {
       		<div className="log-btn-con">
          		<div className="log-err-mes" id="errorMessageLogin"></div>
 		        <input type="submit" value="Login" className="login-btn" />
-
-		       {/* <li><Link to="/profile-page"></Link></li> */}
-		     
 		      </div>
 		    </form>
       </div>

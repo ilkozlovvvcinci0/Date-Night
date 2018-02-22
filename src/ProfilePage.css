@@ -20,6 +20,14 @@
 	text-align: center;
 }
 
+.fa-cog {
+	margin-bottom: 10px;
+}
+
+.fa-pencil {
+	margin-bottom: 10px;
+}
+
 .profile-body {
 	display: flex;
 	max-width: 100%;
