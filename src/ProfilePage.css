@@ -31,6 +31,7 @@
 .profile-body {
 	display: flex;
 	max-width: 100%;
+	height: 100%;
 	justify-content: center;
 	font-family: geneva;
 	word-spacing: 0.2em;
@@ -61,13 +62,14 @@ img.profile-pic {
 	display: flex;
 	justify-content: center;
 	max-width: 100%;
-	margin-top: 100px;
+	height: 1%;
+	margin-top: 0;
 }
 
 .get-swiping-btn {
 	width: 220px;
 	height: 55px;
-	margin: 50px 0px 0px 0px;
+	margin-top: 50px;
 	padding: 0px;
 	border-radius: 10px;
 	border-width: 0px;

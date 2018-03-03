@@ -28,5 +28,19 @@ function checkForm(e) {
   }
 }
 
+    
+LOGIN PAGE FOR FORM
 
 
+    {this.formPreventDefault = this.formPreventDefault.bind(this);
+
+
+
+formPreventDefault() {
+    alert('Form was not submitted!');
+  }
+
+{this.formPreventDefault
+
+, console.log("Passed over from 'login page' to 'profile page'")
+(this.setState({password: event.target.value})));

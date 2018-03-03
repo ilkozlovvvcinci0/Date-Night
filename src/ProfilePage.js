@@ -6,7 +6,7 @@ import faStyles from 'font-awesome/css/font-awesome.css'
 class ProfilePage extends Component {
   constructor(props) {
     super(props);
-      this.state = {};
+      this.state = {profilePic: '/assets/img/brady.jpg'};
   }
 
   render() {
@@ -16,7 +16,7 @@ class ProfilePage extends Component {
           
           <div className="profile-icon"> 
             <FontAwesome name="cog" size="4x" /> 
-            <div> Settings </div>
+            <div > Settings </div>
           </div>
 
           <div className="profile-icon">  
@@ -35,7 +35,7 @@ class ProfilePage extends Component {
           <div className="img-mes">
             <div id="hiMessage"></div> 
             <div className="profile-pic-container">
-              <img src={ require('./img/brady.jpg') } className="profile-pic" id="display-pic" alt="" />
+              <img src={this.state.profilePic} className="profile-pic" id="display-pic" alt="" />
             </div>
           </div>
         </div>

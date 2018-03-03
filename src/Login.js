@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Login.css';
 import ProfilePage from './ProfilePage'; 
+import {checkUsername, checkPassword} from './CredentialChecks'; 
 import {
   BrowserRouter as Router,
   Route,
@@ -11,15 +12,15 @@ class Login extends Component {
   constructor(props) {
   	super(props);
 	    this.state = {
-	    	username:"",
-	    	password:"",
+	    	username: "",
+	    	password: ""    	
 	    };
 
 	  this.handleUserChange = this.handleUserChange.bind(this);
 	  this.handlePassChange = this.handlePassChange.bind(this);
 	  this.handleSubmit = this.handleSubmit.bind(this);
 	}
-
+	  
   handleUserChange(event) {
     this.setState({username: event.target.value});
   }
@@ -29,55 +30,21 @@ class Login extends Component {
   }
 
   handleSubmit(event) {
-
-    function checkUsername(username) {
-	    if(username.search(/[a-zA-Z]/) === -1) {
-	      console.log("Please fill out username field! Needs at least 1 letter.");
-	      return false;
-	   	}
-	   	return true;
-		}
-
-		function checkPassword(password) {
-			if(password.length === 0 ) {
-			  console.log("A password is required!");
-			  return false;
-			}
-
-			if(password.length < 8) {
-			  console.log("Password needs to have at least 8 charcters!");
-			  return false;
-			}
-
-			if(password.search(/\d/) === -1) {
-			  console.log("Password needs to have a number!");
-			  return false;
-			}
-
-			if(password.search(/[a-zA-Z]/) === -1) {
-			  console.log("Password needs to have a letter!");
-			  return false;
-			}
-
-			return true;
-		}
-
-		checkUsername(this.state.username);
-		checkPassword(this.state.password);
-		// TODO: Don't redirect if username and password are wrong!
-		console.log("Redirect us to profile-page...");
-		this.props.history.push("/profile-page")
     event.preventDefault();
+    if (checkUsername(this.state.username) && checkPassword(this.state.password)) {
+      this.props.history.push("./profile-page");
+        return true;
+    }
   }
 
   render() {
     return (
       <div className="login"> 
-      	<form className="login-form" onSubmit={this.handleSubmit} action="ProfilePage.js">
+      	<form className="login-form" onSubmit={this.handleSubmit}>
       		<div className="log-user-pass-con">
 		        <label>
 		          Username
-		          <input className="log-pass-user" id="username" type="text" onChange={this.handleUserChange} /> 
+		          <input className="log-pass-user" type="text" onChange={this.handleUserChange} /> 
 		        </label>
       		</div>
 
@@ -89,8 +56,12 @@ class Login extends Component {
       		</div>
 
       		<div className="log-btn-con">
-         		<div className="log-err-mes" id="errorMessageLogin"></div>
+         		<div className="log-err-mes"></div>
 		        <input type="submit" value="Login" className="login-btn" />
+		      </div>
+
+		      <div>
+		      	{this.state.errorMessage}
 		      </div>
 		    </form>
       </div>
@@ -100,4 +71,3 @@ class Login extends Component {
 }
 
 export default Login;
-
