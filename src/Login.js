@@ -13,27 +13,21 @@ class Login extends Component {
   	super(props);
 	    this.state = {
 	    	username: "",
-	    	password: ""    	
+	    	password: "",
+        error: "",   	
 	    };
 
-	  this.handleUserChange = this.handleUserChange.bind(this);
-	  this.handlePassChange = this.handlePassChange.bind(this);
 	  this.handleSubmit = this.handleSubmit.bind(this);
 	}
-	  
-  handleUserChange(event) {
-    this.setState({username: event.target.value});
-  }
-
-  handlePassChange(event) {
-    this.setState({password: event.target.value});
-  }
 
   handleSubmit(event) {
     event.preventDefault();
-    if (checkUsername(this.state.username) && checkPassword(this.state.password)) {
+    let errors = checkUsername(this.state.username);
+    errors = errors.concat(checkPassword(this.state.password));
+    if (errors.length > 0) {
+      this.setState({error: errors[0]});
+    } else {
       this.props.history.push("./profile-page");
-        return true;
     }
   }
 
@@ -44,25 +38,23 @@ class Login extends Component {
       		<div className="log-user-pass-con">
 		        <label>
 		          Username
-		          <input className="log-pass-user" type="text" onChange={this.handleUserChange} /> 
+		          <input className="log-pass-user" type="text" value={this.state.username} 
+              onChange={event => this.setState({username: event.target.value})} /> 
 		        </label>
       		</div>
 
       		<div className="log-user-pass-con">
       			<label>
 		          Password
-		          <input className="log-pass-user" type="text" onChange={this.handlePassChange} /> 
+		          <input className="log-pass-user" type="password" value={this.state.password}  
+              onChange={event => this.setState({password: event.target.value})} /> 
 		        </label>
       		</div>
 
       		<div className="log-btn-con">
-         		<div className="log-err-mes"></div>
 		        <input type="submit" value="Login" className="login-btn" />
 		      </div>
-
-		      <div>
-		      	{this.state.errorMessage}
-		      </div>
+		      <div className="err">{this.state.error}</div>
 		    </form>
       </div>
     );

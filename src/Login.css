@@ -51,8 +51,8 @@
 .log-btn-con {
 	display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin: 45px 200px 0 0;
+  justify-content: center;
+  margin: 0;
   width: 67%;
   height: 9%
 }
@@ -75,4 +75,8 @@
 	border-radius: 10px;
   border-width: 0px;
   color: #990000;
+}
+
+.err {
+	color: red;
 }

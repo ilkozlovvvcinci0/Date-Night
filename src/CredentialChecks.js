@@ -1,30 +1,31 @@
 export function checkUsername(username) {
+  let errors = [];
+
   if(username.search(/[a-zA-Z]/) === -1) {
-    console.log("Please fill out username field! Needs at least 1 letter.");
-    return false;
+    errors.push("Please fill out username field! Needs at least 1 letter.");
   }
-  return true;
+  
+  return errors;
 }
 
 export function checkPassword(password) {
+	let errors = [];
+
   if(password.length === 0 ) {
-    console.log("A password is required!");
-    return false;
+    errors.push("A password is required!");
   }
 
   if(password.length < 8) {
-    console.log("Password needs to have at least 8 charcters!");
-    return false;
+    errors.push("Password needs to have at least 8 charcters!");
   }
 
   if(password.search(/\d/) === -1) {
-    console.log("Password needs to have a number!");
-    return false;
+    errors.push("Password needs to have a number!");
   }
 
   if(password.search(/[a-zA-Z]/) === -1) {
-    console.log("Password needs to have a letter!");
-    return false;
+    errors.push("Password needs to have a letter!");
   }
-  return true;
+
+  return errors;
 }
