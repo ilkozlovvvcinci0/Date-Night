@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './ProfilePage.css'; 
 import FontAwesome from 'react-fontawesome'
-import faStyles from 'font-awesome/css/font-awesome.css'
+import faStyles from 'font-awesome/css/font-awesome.css';
+import {getUserImage} from './Users.js'
 
 class ProfilePage extends Component {
   constructor(props) {
     super(props);
-      this.state = {profilePic: '/assets/img/brady.jpg'};
+      this.state = {
+        profilePic: `assets/img/${getUserImage(this.state.username)}`
+      };
   }
 
   render() {

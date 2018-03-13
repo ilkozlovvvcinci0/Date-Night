@@ -77,6 +77,12 @@
   color: #990000;
 }
 
+.err-con {
+	display: flex;
+	margin-top: 50px;
+}
+
 .err {
+	font-style: italic;
 	color: red;
 }

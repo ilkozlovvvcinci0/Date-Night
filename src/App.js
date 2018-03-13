@@ -6,9 +6,7 @@ import ProfilePage from './ProfilePage';
 import {
   BrowserRouter as Router,
   Route
-} from 'react-router-dom'
-
-
+} from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {

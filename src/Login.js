@@ -28,6 +28,7 @@ class Login extends Component {
       this.setState({error: errors[0]});
     } else {
       this.props.history.push("./profile-page");
+      localStorage.setItem("username", this.state.username);
     }
   }
 
@@ -54,7 +55,9 @@ class Login extends Component {
       		<div className="log-btn-con">
 		        <input type="submit" value="Login" className="login-btn" />
 		      </div>
-		      <div className="err">{this.state.error}</div>
+		      <div className="err-con">
+            <div className="err">{this.state.error}</div>
+          </div>
 		    </form>
       </div>
     );

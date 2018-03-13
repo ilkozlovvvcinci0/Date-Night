@@ -4,7 +4,7 @@ export function checkUsername(username) {
   if(username.search(/[a-zA-Z]/) === -1) {
     errors.push("Please fill out username field! Needs at least 1 letter.");
   }
-  
+
   return errors;
 }
 
