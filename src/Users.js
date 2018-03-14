@@ -16,9 +16,8 @@ function getUserMatches(username) {
 	return userDatabase[username]["matches"];
 }
 
-function getUsername() {
-	let urlParams = new URLSearchParams(window.location.search);
-	return urlParams.get("username");
+export function getUsername() {
+	return localStorage.getItem("username");
 }
 
 function getUserAge(username) {

@@ -8,25 +8,14 @@ import {getUserImage, getUsername} from "./Users.js";
 class ProfilePage extends Component {
   constructor(props) {
     super(props);
-      this.state = {
-        profilePic: "assets/img/brady.jpg",
-        // `${getUserImage(this.state.username)}`
-      };
+    let username = getUsername();
+    this.state = {
+      username: username,
+      profilePic: `assets/img/${getUserImage(username)}`
+    };
   }
 
-
-
-//   var test = React.createClass({
-//   componentDidUpdate: function(prevProp, prevState){
-//     this.refs.test.innerHTML = "Hello";
-//   },
-//   render: function(){
-//     return (
-//       <div contentEditable='true' ref='test'></div>
-//     );
-//   }
-// });
-
+  
   render() {
     return (
       <div className="profile-main-con">
@@ -51,7 +40,7 @@ class ProfilePage extends Component {
         <div className="profile-body">
 
           <div className="img-mes">
-            <div id="hiMessage"> Hi </div>  
+            <div id="hiMessage"> Hi {this.state.username}</div>
             <div className="profile-pic-container">
               <img src={this.state.profilePic} className="profile-pic" id="display-pic" alt="" />
             </div>
