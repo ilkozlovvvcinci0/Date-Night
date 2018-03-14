@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import './Home.css';
+import React, { Component } from "react";
+import "./Home.css";
 import {
   Link
-} from 'react-router-dom'
+} from "react-router-dom"
 
 class Home extends Component {
   render() {
