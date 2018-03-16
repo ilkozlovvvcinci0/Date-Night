@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import "./ProfilePage.css"; 
 import FontAwesome from "react-fontawesome"
 import faStyles from "font-awesome/css/font-awesome.css";
 import {getUserImage, getUsername} from "./Users.js";
-
+import {Link} from "react-router-dom"
 
 class ProfilePage extends Component {
   constructor(props) {
@@ -14,7 +14,6 @@ class ProfilePage extends Component {
       profilePic: `assets/img/${getUserImage(username)}`
     };
   }
-
   
   render() {
     return (
@@ -48,7 +47,7 @@ class ProfilePage extends Component {
         </div>
 
         <div className="profile-footer">
-          <input type="submit" value="Get Swiping" className="get-swiping-btn" />
+          <Link to="/swipe" className="get-swiping-btn"> Get Swiping </Link>
         </div>
       </div>
     );

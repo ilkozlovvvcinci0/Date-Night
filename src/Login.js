@@ -1,12 +1,8 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import "./Login.css";
 import ProfilePage from "./ProfilePage"; 
 import {checkUsername, checkPassword} from "./CredentialChecks"; 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-} from "react-router-dom";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 class Login extends Component {
   constructor(props) {

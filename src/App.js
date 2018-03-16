@@ -3,6 +3,7 @@ import Home from "./Home"
 import "./App.css"; 
 import Login from "./Login"; 
 import ProfilePage from "./ProfilePage"; 
+import Swipe from "./Swipe"; 
 import {
   BrowserRouter as Router,
   Route
@@ -21,6 +22,7 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route exact path="/login" component={Login}/>
           <Route exact path="/profile-page" component={ProfilePage}/>
+          <Route exact path="/swipe" component={Swipe}/>
         </div>
       </Router>
     );
