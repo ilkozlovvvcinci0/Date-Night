@@ -1,13 +1,12 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import Home from "./Home"
 import "./App.css"; 
 import Login from "./Login"; 
 import ProfilePage from "./ProfilePage"; 
 import Swipe from "./Swipe"; 
-import {
-  BrowserRouter as Router,
-  Route
-} from "react-router-dom";
+import Settings from "./Settings"; 
+import EditProfile from "./EditProfile"; 
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 class App extends Component {
   constructor(props) {
@@ -23,6 +22,8 @@ class App extends Component {
           <Route exact path="/login" component={Login}/>
           <Route exact path="/profile-page" component={ProfilePage}/>
           <Route exact path="/swipe" component={Swipe}/>
+          <Route exact path="/settings" component={Settings}/>
+          <Route exact path="/edit-profile" component={EditProfile}/>
         </div>
       </Router>
     );

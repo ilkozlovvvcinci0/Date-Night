@@ -3,7 +3,7 @@ import "./ProfilePage.css";
 import FontAwesome from "react-fontawesome"
 import faStyles from "font-awesome/css/font-awesome.css";
 import {getUserImage, getUsername} from "./Users.js";
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
 
 class ProfilePage extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ class ProfilePage extends Component {
           
           <div className="profile-icon"> 
             <FontAwesome name="cog" size="4x" /> 
-            <div > Settings </div>
+            <Link to="/settings" className="icon"> Settings </Link>
           </div>
 
           <div className="profile-icon">  
@@ -31,7 +31,7 @@ class ProfilePage extends Component {
 
           <div className="profile-icon">                       
             <FontAwesome name="pencil" size="4x" /> 
-            <div> Edit Profile </div>
+            <Link to="/edit-profile" className="icon"> Edit Profile </Link>
           </div>
 
         </div>
@@ -39,7 +39,7 @@ class ProfilePage extends Component {
         <div className="profile-body">
 
           <div className="img-mes">
-            <div id="hiMessage"> Hi {this.state.username}</div>
+            <div id="hiMessage"> Hi {this.state.username} </div>
             <div className="profile-pic-container">
               <img src={this.state.profilePic} className="profile-pic" id="display-pic" alt="" />
             </div>
