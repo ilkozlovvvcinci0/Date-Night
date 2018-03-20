@@ -1,0 +1,43 @@
+.edit-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	font-family: geneva;
+	font-size: 1.2em;
+}
+
+.about-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-margin {
+	display: flex;
+	margin-bottom: 30px;
+}
+
+.text-area {
+	display: flex;
+  text-align: center;
+  font-family: arial;
+	font-size: 1em;
+}
+
+.work-con {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 35px;
+}
+
+.qual-con {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 35px;
+}
