@@ -499,6 +499,8 @@ img.profile-pic {
 .swipe-container {
 	display: flex;
 	max-width: 100%;
+ 	min-height: 0;
+  	min-width: 0;
 	flex-direction: column;
 	justify-content: space-between;
 	margin: 50px 0px 0px 0px;
@@ -509,6 +511,8 @@ img.profile-pic {
 	display: flex;
 	max-width: 100%;
 	justify-content: center;
+ 	min-height: 0;
+  	min-width: 0;
 }
 
 .profile-pic-container {

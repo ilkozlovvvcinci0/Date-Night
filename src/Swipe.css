@@ -1,0 +1,43 @@
+.swipe-container {
+	display: flex;
+	width: 55%;
+	height: 80%;
+ 	min-height: 0;
+  min-width: 0;
+  flex-direction: column;
+  margin: 100px 100px;
+  font-family: geneva;
+}
+
+.swipe-body {
+	display: flex;
+ 	min-height: 0;
+  min-width: 0;
+}
+
+.profile-pic-container {
+	background-color: #fff;
+	height: 525px;
+  width: 285px;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-left: 105px;
+}
+
+.i-btn-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.i-btn {
+	display: flex;
+  font-family: serif;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bolder;
+  border-width: medium;
+  border-radius: 5px;
+  border-color: #999;
+}
