@@ -1,27 +1,31 @@
 .swipe-container {
 	display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.swipe-body {
+	display: flex;
 	width: 55%;
 	height: 80%;
- 	min-height: 0;
-  min-width: 0;
   flex-direction: column;
   margin: 100px 100px;
   font-family: geneva;
 }
 
-.swipe-body {
-	display: flex;
- 	min-height: 0;
-  min-width: 0;
+.pic-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .profile-pic-container {
 	background-color: #fff;
 	height: 525px;
-  width: 285px;
+  width: 325px;
   overflow: hidden;
   border-radius: 30px;
-  margin-left: 105px;
 }
 
 .i-btn-con {
@@ -41,3 +45,14 @@
   border-radius: 5px;
   border-color: #999;
 }
+
+.cross-icon {
+	margin-left: 120px;
+	color: #ff0000;
+}
+
+.check-icon {
+	margin-right: 120px;
+	color: #008000;
+}
+
