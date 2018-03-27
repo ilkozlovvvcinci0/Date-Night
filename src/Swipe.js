@@ -1,8 +1,10 @@
 import React, {Component} from "react";
 import "./Swipe.css"; 
+import {getUserAge, getUserOccupation, getUserAbout} from "./Users.js"; 
 import FontAwesome from "react-fontawesome"
 import faStyles from "font-awesome/css/font-awesome.css";
 import Carousel from "nuka-carousel";
+import {Link} from "react-router-dom";
 
 class Swipe extends Component {
   constructor(props) {
@@ -18,7 +20,7 @@ class Swipe extends Component {
     return (
       <div className="swipe-container">  
         <div className="swipe-body">  
-          
+
           <Carousel
             
             renderTopCenterControls={({ currentSlide }) => (
@@ -37,34 +39,37 @@ class Swipe extends Component {
               <div> </div>
             )}
           >
-    
+
             <div className="pic-container">
               <div className="profile-pic-container">
                 <div className="i-btn-con">
-                  <button class="i-btn" id="Fran3" onclick="vup('Fran3')"> i </button>
+                  <Link to="/view-user-profile" className="vup-link"><button type="button"
+                  className="i-btn"> i </button></Link>
                 </div>
-                <img src="assets/img/francesca.jpg" className="profile-pic" id="display-pic" data-username="Fran3" />
+                <img src="assets/img/francesca.jpg" className="profile-pic"/>
               </div>
             </div>
 
             <div className="pic-container">
               <div className="profile-pic-container">
                 <div className="i-btn-con">
-                  <button class="i-btn" id="Fran3" onclick="vup('Fran3')"> i </button>
+                  <Link to="/view-user-profile" className="vup-link"><button type="button"
+                  className="i-btn"> i </button></Link>
                 </div>
-                <img src="assets/img/kesha.jpg" className="profile-pic" id="display-pic" data-username="Fran3" />
+                <img src="assets/img/kesha.jpg" className="profile-pic"/>
               </div>
             </div>
 
             <div className="pic-container">
               <div className="profile-pic-container">
                 <div className="i-btn-con">
-                  <button class="i-btn" id="Fran3" onclick="vup('Fran3')"> i </button>
+                  <Link to="/view-user-profile" className="vup-link"><button type="button"
+                  className="i-btn"> i </button></Link>
                 </div>
-                <img src="assets/img/lauren.jpg" className="profile-pic" id="display-pic" data-username="Fran3" />
+                <img src="assets/img/lauren.jpg" className="profile-pic"/>
               </div>
             </div>
-          
+
           </Carousel>
         
         </div>

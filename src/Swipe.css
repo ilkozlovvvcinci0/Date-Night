@@ -46,6 +46,10 @@
   border-color: #999;
 }
 
+.vup-link {
+  text-decoration: none;
+}
+
 .cross-icon {
 	margin-left: 120px;
 	color: #ff0000;

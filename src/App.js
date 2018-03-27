@@ -6,6 +6,7 @@ import ProfilePage from "./ProfilePage";
 import Swipe from "./Swipe"; 
 import Settings from "./Settings"; 
 import EditProfile from "./EditProfile"; 
+import ViewUserProfile from "./ViewUserProfile"; 
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
           <Route exact path="/swipe" component={Swipe}/>
           <Route exact path="/settings" component={Settings}/>
           <Route exact path="/edit-profile" component={EditProfile}/>
+          <Route exact path="/view-user-profile" component={ViewUserProfile}/>
         </div>
       </Router>
     );
