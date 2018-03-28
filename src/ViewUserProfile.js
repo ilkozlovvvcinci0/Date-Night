@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./ViewUserProfile.css"; 
-import {getUserAge, getUserOccupation, getUserAbout} from "./Users.js"; 
+import {userDatabase, getUserAge, getUserOccupation, getUserAboutMe} from "./Users.js"; 
 
 class ViewUserProfile extends Component {
   constructor(props) {
