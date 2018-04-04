@@ -43,7 +43,7 @@ class Swipe extends Component {
             <div className="pic-container">
               <div className="profile-pic-container">
                 <div className="i-btn-con">
-                  <Link to="/view-user-profile" className="vup-link"><button type="button"
+                  <Link to="/view-user-profile/Fran3" className="vup-link"><button type="button"
                   className="i-btn"> i </button></Link>
                 </div>
                 <img src="assets/img/francesca.jpg" className="profile-pic"/>
@@ -53,7 +53,7 @@ class Swipe extends Component {
             <div className="pic-container">
               <div className="profile-pic-container">
                 <div className="i-btn-con">
-                  <Link to="/view-user-profile" className="vup-link"><button type="button"
+                  <Link to="/view-user-profile/Kesha90" className="vup-link"><button type="button"
                   className="i-btn"> i </button></Link>
                 </div>
                 <img src="assets/img/kesha.jpg" className="profile-pic"/>
@@ -63,7 +63,7 @@ class Swipe extends Component {
             <div className="pic-container">
               <div className="profile-pic-container">
                 <div className="i-btn-con">
-                  <Link to="/view-user-profile" className="vup-link"><button type="button"
+                  <Link to="/view-user-profile/Lauren87" className="vup-link"><button type="button"
                   className="i-btn"> i </button></Link>
                 </div>
                 <img src="assets/img/lauren.jpg" className="profile-pic"/>

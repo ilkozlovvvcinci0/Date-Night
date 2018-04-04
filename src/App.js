@@ -25,7 +25,7 @@ class App extends Component {
           <Route exact path="/swipe" component={Swipe}/>
           <Route exact path="/settings" component={Settings}/>
           <Route exact path="/edit-profile" component={EditProfile}/>
-          <Route exact path="/view-user-profile" component={ViewUserProfile}/>
+          <Route path="/view-user-profile/:user" component={ViewUserProfile}/>
         </div>
       </Router>
     );

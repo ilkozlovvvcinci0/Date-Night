@@ -1,20 +1,21 @@
-import React, {Component} from "react";
+import React from "react";
 import "./ViewUserProfile.css"; 
-import {userDatabase, getUserAge, getUserOccupation, getUserAboutMe} from "./Users.js"; 
+import {getUserAge, getUserOccupation} from "./Users.js"; 
+import {withRouter} from 'react-router';
 
-class ViewUserProfile extends Component {
-  constructor(props) {
-    super(props);
-  
-  };
-
+class ViewUserProfileEx extends React.Component {
   render() {
+    const { user } = this.props.match.params
     return (
-      <div className="">  </div>
+      <div>
+        <div className="name-age-con">
+          <div className="name"> {user}, </div>
+          <div className="age"> {getUserAge(user)} </div>
+        </div>
+        <div className="occupation"> {getUserOccupation(user)} </div> 
+      </div>
     );
   }
 }
 
-export default ViewUserProfile;
-
-
+export default withRouter(ViewUserProfileEx);
