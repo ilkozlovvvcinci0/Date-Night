@@ -7,6 +7,7 @@ import Swipe from "./Swipe";
 import Settings from "./Settings"; 
 import EditProfile from "./EditProfile"; 
 import ViewUserProfile from "./ViewUserProfile"; 
+import Match from "./Match"; 
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 class App extends Component {
