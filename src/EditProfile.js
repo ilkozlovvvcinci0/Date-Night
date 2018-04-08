@@ -1,13 +1,7 @@
 import React, {Component} from "react";
 import "./EditProfile.css"; 
-import {Link} from "react-router-dom"
 
 class EditProfile extends Component {
-  constructor(props) {
-    super(props);
-    
-  };
-  
   render() {
     return (
       <div className="edit-body">

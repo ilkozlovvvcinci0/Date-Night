@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import "./ProfilePage.css"; 
 import FontAwesome from "react-fontawesome"
-import faStyles from "font-awesome/css/font-awesome.css";
 import {getUserImage, getUsername} from "./Users.js";
 import {Link} from "react-router-dom";
 
@@ -41,7 +40,7 @@ class ProfilePage extends Component {
           <div className="img-mes">
             <div id="hiMessage"> Hi {this.state.username} </div>
             <div className="profile-pic-container">
-              <img src={this.state.profilePic} className="profile-pic" id="display-pic" alt="" />
+              <img src={this.state.profilePic} className="profile-pic" alt="" />
             </div>
           </div>
         </div>

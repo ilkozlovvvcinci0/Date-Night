@@ -1,13 +1,7 @@
 import React, {Component} from "react";
 import "./Settings.css"; 
-import {Link} from "react-router-dom"
 
 class Settings extends Component {
-  constructor(props) {
-    super(props);
-    
-  };
-  
   render() {
     return (
       <div className="settings-body">
@@ -21,8 +15,8 @@ class Settings extends Component {
           <div className="max-form">
             <div> Maximum Distance (km): </div>
             <form className="form">
-              <input className="input" type="range" name="foo" min="0" max="150" onchange="updateTextInput(this.value, 'textInput1')" />
-              <input className="field" type="text" id="textInput1" value="" />
+              <input className="input" type="range" name="foo" min="0" max="150" />
+              <input className="field" type="text" value="" />
             </form>
           </div>
         </div>
@@ -31,8 +25,8 @@ class Settings extends Component {
           <div className="age-form">
             <div> Age Range: </div>
             <form className="form">
-              <input className="input" type="range" name="foo" min="18" max="70" onchange="updateTextInput(this.value, 'textInput2')" />
-              <input className="field" type="text" id="textInput2" value="" />
+              <input className="input" type="range" name="foo" min="18" max="70" />
+              <input className="field" type="text" value="" />
             </form>
           </div>
         </div>
@@ -43,15 +37,15 @@ class Settings extends Component {
           <div className="new-messages">
             <div className="text-check">
               <div className="new-matches"> New Matches </div>
-              <div class="switch_box box_1">
-                <input type="checkbox" class="switch_1" />
+              <div className="switch_box box_1">
+                <input type="checkbox" className="switch_1" />
               </div>
             </div>
               
             <div className="text-check">
               <div className="set-messages"> Messages </div>
-              <div class="switch_box box_1">
-                <input type="checkbox" class="switch_1" />
+              <div className="switch_box box_1">
+                <input type="checkbox" className="switch_1" />
               </div>
             </div>
           </div>

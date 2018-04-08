@@ -1,8 +1,7 @@
 import React, {Component} from "react";
 import "./Swipe.css"; 
-import {getUserAge, getUserOccupation, getUserAbout} from "./Users.js"; 
-import FontAwesome from "react-fontawesome"
 import faStyles from "font-awesome/css/font-awesome.css";
+import FontAwesome from "react-fontawesome"
 import Carousel from "nuka-carousel";
 import {Link} from "react-router-dom";
 
@@ -46,7 +45,7 @@ class Swipe extends Component {
                   <Link to="/view-user-profile/Fran3" className="vup-link"><button type="button"
                   className="i-btn"> i </button></Link>
                 </div>
-                <img src="assets/img/francesca.jpg" className="profile-pic"/>
+                <img src="assets/img/francesca.jpg" className="profile-pic" alt="" />
               </div>
             </div>
 
@@ -56,7 +55,7 @@ class Swipe extends Component {
                   <Link to="/view-user-profile/Kesha90" className="vup-link"><button type="button"
                   className="i-btn"> i </button></Link>
                 </div>
-                <img src="assets/img/kesha.jpg" className="profile-pic"/>
+                <img src="assets/img/kesha.jpg" className="profile-pic" alt="" />
               </div>
             </div>
 
@@ -66,7 +65,7 @@ class Swipe extends Component {
                   <Link to="/view-user-profile/Lauren87" className="vup-link"><button type="button"
                   className="i-btn"> i </button></Link>
                 </div>
-                <img src="assets/img/lauren.jpg" className="profile-pic"/>
+                <img src="assets/img/lauren.jpg" className="profile-pic" alt=""/>
               </div>
             </div>
 
