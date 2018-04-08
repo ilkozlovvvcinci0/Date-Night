@@ -11,9 +11,7 @@ class Swipe extends Component {
     this.handleSwipe = this.handleSwipe.bind(this);
   };
 
-  handleSwipe(currentSlide) {
-    console.log(currentSlide)
-  }
+  handleSwipe(currentSlide) {}
 
   render() {
     return (

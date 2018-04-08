@@ -18,7 +18,6 @@ class ViewUserProfile extends React.Component {
 
         <div className="vup-main-body">
           <div className="about-me"> {getUserAboutMe(user)} </div>
-          <div> {getUserImage(user)} </div>
         </div>
       </div>
     );
