@@ -25,3 +25,13 @@ function goSwipe() {
 function goSm() {
   window.location.href = "send-message.html?username=" + getUsername() + "&match=" + getMatchUsername();
 }
+
+
+----------------------
+
+
+"assets/img/" + getUserImage(username)
+
+`assets/img/${getUserImage(username)}`
+
+      profilePic: `assets/img/${getUserImage(user)}`

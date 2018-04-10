@@ -1,6 +1,6 @@
 import React from "react";
 import "./ViewUserProfile.css"; 
-import {getUserAge, getUserOccupation, getUserAboutMe, getUserImage} from "./Users.js"; 
+import {getUserAge, getUserOccupation, getUserAboutMe} from "./Users.js"; 
 import {withRouter} from 'react-router';
 
 class ViewUserProfile extends React.Component {

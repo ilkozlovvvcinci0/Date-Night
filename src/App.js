@@ -27,7 +27,7 @@ class App extends Component {
           <Route exact path="/settings" component={Settings}/>
           <Route exact path="/edit-profile" component={EditProfile}/>
           <Route path="/view-user-profile/:user" component={ViewUserProfile}/>
-          <Route path="/match/:user" component={Match}/>
+          <Route exact path="/match/:user" component={Match}/>
         </div>
       </Router>
     );

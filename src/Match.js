@@ -1,19 +1,21 @@
-import React, {Component} from "react";
+import React from "react";
 import "./Match.css"; 
-import {getUserImage, getUsername} from "./Users.js";
+import {getUsername, getUserImage} from "./Users.js"; 
 import {Link} from "react-router-dom";
+import {withRouter} from 'react-router';
 
-class Match extends Component {
+class Match extends React.Component {
   constructor(props) {
     super(props);
     let username = getUsername();
     this.state = {
       username: username,
-      profilePic: `assets/img/${getUserImage(username)}`
+      profilePic: `../assets/img/${getUserImage(username)}`
     };
   }
 
   render() {
+    const {user} = this.props.match.params
     return (
      <div className="match-container">
       
@@ -24,10 +26,10 @@ class Match extends Component {
       <div className="match-body">
         <div className="match-pics">
           <div className="match-pic-container"> 
-            <img src = {this.state.profilePic} className="profile-pic" alt="" />
+            <img src={this.state.profilePic} className="profile-pic" alt="" />
           </div>
           <div className="match-pic-container"> 
-            <img src="../assets/img/no-image.jpg" className="profile-pic" alt="" />
+            <img src={(`../assets/img/${getUserImage(user)}`)} className="profile-pic" alt="" />
           </div>
         </div>
       </div>
@@ -45,4 +47,4 @@ class Match extends Component {
   }
 }
 
-export default Match;
+export default withRouter(Match);
