@@ -219,7 +219,7 @@
 	font-size: 1em;
 }
 
-.sign-up-username {
+.field {
 	width: 30%;
 	height: 37%;
 	font-family: geneva;
@@ -231,45 +231,7 @@
 	border-radius: 10px;
 }
 
-.email-con {
-	display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  height: 15%;
-}
 
-.sign-up-email {
-	width: 35%;
-	height: 37%;
-	font-family: geneva;
-	font-size: 0.8em;
-	font-weight: 150;
-	margin: 5px 0px 0px 25px;
-	padding: 0px;
-	border-width: 0px;
-	border-radius: 10px;
-}
-
-.pass-con {
-	display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  height: 15%;
-}
-
-.signUpPassword {
-	width: 31%;
-	height: 37%;
-	font-family: geneva;
-	font-size: 0.8em;
-	font-weight: 150;
-	margin: 5px 0px 0px 25px;
-	padding: 0px;
-	border-width: 0px;
-	border-radius: 10px;
-}
 
 .dob-con {
 	display: flex;
@@ -298,7 +260,6 @@
   margin: 0 50px 0 0;  
   font-size: 0.7em;
 }
-
 .year {
 	display: flex;
   flex-direction: row;

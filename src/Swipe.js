@@ -4,14 +4,30 @@ import faStyles from "font-awesome/css/font-awesome.css";
 import FontAwesome from "react-fontawesome"
 import Carousel from "nuka-carousel";
 import {Link} from "react-router-dom";
+import {getUserMatches, getUsername} from "./Users";
 
 class Swipe extends Component {
   constructor(props) {
     super(props);
-    this.handleSwipe = this.handleSwipe.bind(this);
+    this.onTick = this.onTick.bind(this);
   };
 
-  handleSwipe(currentSlide) {}
+  onTick(currentSlide, nextSlide) {
+    let slideUser = {
+      0: "Fran3",
+      1: "Kesha90",
+      2: "Lauren87"
+    }
+
+    let userMatches = getUserMatches(getUsername());
+    let currentCandidate = slideUser[currentSlide];
+
+    if (userMatches.indexOf(currentCandidate) >= 0) {
+      this.props.history.push("./match/" + currentCandidate);
+    } else {
+      nextSlide();
+    }
+  }
 
   render() {
     return (
@@ -19,17 +35,15 @@ class Swipe extends Component {
         <div className="swipe-body">  
 
           <Carousel
-            
-            renderTopCenterControls={({ currentSlide }) => (
-              this.handleSwipe(currentSlide) 
-            )}
 
+            wrapAround={true}
+            
             renderCenterLeftControls={({ previousSlide }) => (
               <FontAwesome name="times" className="cross-icon" size="3x" onClick={previousSlide} />
             )}
 
-            renderCenterRightControls={({ nextSlide }) => (
-              <FontAwesome name="check" className="check-icon" size="3x" onClick={nextSlide} /> 
+            renderCenterRightControls={({ nextSlide, currentSlide }) => (
+              <FontAwesome name="check" className="check-icon" size="3x" onClick={() => this.onTick(currentSlide, nextSlide)} /> 
             )}
 
             renderBottomCenterControls={({ }) => (

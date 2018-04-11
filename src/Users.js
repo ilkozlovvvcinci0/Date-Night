@@ -12,9 +12,9 @@ export function getUserImage(username) {
 	return userDatabase[username]["image"];
 }
 
-// function getUserMatches(username) {
-// 	return userDatabase[username]["matches"];
-// }
+export function getUserMatches(username) {
+	return userDatabase[username]["matches"];
+}
 
 export function getUsername() {
 	return localStorage.getItem("username");

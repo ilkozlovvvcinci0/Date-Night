@@ -8,7 +8,7 @@ class Settings extends Component {
         
         <div className="location-con">
           <div> Location: </div>
-          <div className="location-a" id="loc"> My Current Location </div>
+          <div className="location-a"> My Current Location </div>
         </div>
 
         <div className="distance-con">

@@ -38,7 +38,7 @@ class ProfilePage extends Component {
         <div className="profile-body">
 
           <div className="img-mes">
-            <div id="hiMessage"> Hi {this.state.username} </div>
+            <div> Hi {this.state.username} </div>
             <div className="profile-pic-container">
               <img src={this.state.profilePic} className="profile-pic" alt="" />
             </div>

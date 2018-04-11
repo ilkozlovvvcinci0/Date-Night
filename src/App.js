@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import Home from "./Home"
 import "./App.css"; 
 import Login from "./Login"; 
+import SignUp from "./SignUp"; 
 import ProfilePage from "./ProfilePage"; 
 import Swipe from "./Swipe"; 
 import Settings from "./Settings"; 
@@ -22,6 +23,7 @@ class App extends Component {
         <div className="app">
           <Route exact path="/" component={Home}/>
           <Route exact path="/login" component={Login}/>
+          <Route exact path="/sign-up" component={SignUp}/>
           <Route exact path="/profile-page" component={ProfilePage}/>
           <Route exact path="/swipe" component={Swipe}/>
           <Route exact path="/settings" component={Settings}/>
