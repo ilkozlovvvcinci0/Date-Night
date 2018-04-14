@@ -1,12 +1,13 @@
 import React, {Component} from "react";
 import "./SignUp.css";
-import {checkUsername, checkPassword} from "./CredentialChecks"; 
+import {checkUsername, checkEmail, checkPassword} from "./CredentialChecks"; 
 
 class SignUp extends Component {
   constructor(props) {
   	super(props);
 	    this.state = {
 	    	username: "",
+        email: "",
 	    	password: "",
         error: "",   	
 	    };
@@ -17,6 +18,7 @@ class SignUp extends Component {
   handleSubmit(event) {
     event.preventDefault();
     let errors = checkUsername(this.state.username);
+    errors = errors.concat(checkEmail(this.state.email));
     errors = errors.concat(checkPassword(this.state.password));
     if (errors.length > 0) {
       this.setState({error: errors[0]});
@@ -30,22 +32,34 @@ class SignUp extends Component {
     return (
      <div className="sign-up-con">
 
-      <form className="sign-up-form" action="upload-pic.html">
+      <form className="sign-up-form" onSubmit={this.handleSubmit}>
         <div className="field-con">
-          <div className="su-user-text"> Username </div><input type="text" name="Username" 
-          className="field-user-pass" /><br />
+          <label className="label-1">
+            Username 
+            <input type="text" value={this.state.username} 
+            onChange={event => this.setState({username: event.target.value})} 
+            className="field-user-pass" /><br />
+          </label>
         </div>
         
         <div className="field-con">
-          Email <input type="text" name="Email" className="field-email" /><br />
+          <label className="label-1">
+            Email <input type="text" value={this.state.email}
+            onChange={event => this.setState({email: event.target.value})} 
+            className="field-email" /><br />
+          </label>
         </div>
         
         <div className="field-con">
-          Password <input type="Password" name="Password" className="field-user-pass" /><br />
+          <label className="label-1">
+            Password <input type="Password" name="Password" value={this.state.password}  
+            onChange={event => this.setState({password: event.target.value})} 
+            className="field-user-pass" /><br />
+          </label>
         </div>
 
         <div className="field-con">
-          <label className="label">
+          <label className="label-2">
             Date of Birth
             <select className="dropdown-day" value={this.state.value} onChange={this.handleChange}>
               <option value="1">1</option>
@@ -145,7 +159,7 @@ class SignUp extends Component {
         </div>
 
         <div className="field-con">
-          <label className="label">
+          <label className="label-2">
             I am a
             <select className="dropdown-day" value={this.state.value} onChange={this.handleChange}>
               <option value="man">man</option>
@@ -153,7 +167,7 @@ class SignUp extends Component {
             </select>
           </label>
 
-          <label className="label">
+          <label className="label-2">
             seeking a
             <select className="dropdown-day" value={this.state.value} onChange={this.handleChange}>
               <option value="woman">woman</option>
@@ -163,9 +177,12 @@ class SignUp extends Component {
         </div>
 
         <div className="sun-btn-con">
-          <div className="err-mes"></div> 
           <input type="submit" value="Sign Up Now!" className="sign-up-now" />
         </div>
+         <div className="err-con">
+            <div className="err">{this.state.error}</div>
+         </div>
+
 
 
 

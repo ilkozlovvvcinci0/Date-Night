@@ -8,6 +8,19 @@ export function checkUsername(username) {
   return errors;
 }
 
+export function checkEmail(email) {
+  let errors = [];
+
+   // var email = document.getElementById("email").value;
+  if( ! email.match(/\w@\w+\.\w/) ) {
+    errors.push("The email appears to be invalid!");
+   }
+   
+   return errors;
+}
+
+
+
 export function checkPassword(password) {
 	let errors = [];
 

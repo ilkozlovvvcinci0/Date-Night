@@ -18,10 +18,6 @@
   border-width: 0px;
 }
 
-.label {
-  display: flex;
-}
-
 .field-con {
   display: flex;
   flex-direction: row;
@@ -30,8 +26,15 @@
   margin-bottom: 50px;
 }
 
-.su-user-text {
-  font-size: 1em;
+.label-1 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.label-2 {
+  display: flex;
 }
 
 .field-user-pass {
@@ -77,9 +80,8 @@
 .sun-btn-con {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin: 0 0 0 75px;
-  width: 67%;
+  justify-content: flex-end;
+  width: 60%;
   height: 8.5%
 }
 
@@ -92,4 +94,15 @@
   border-radius: 10px;
   border-width: 0px;
   color: #990000;
+}
+
+.err-con {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.err {
+  font-style: italic;
+  color: red;
 }
