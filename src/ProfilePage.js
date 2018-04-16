@@ -24,9 +24,7 @@ class ProfilePage extends Component {
             <Link to="/settings" className="icon"> Settings </Link>
           </div>
 
-          <div className="profile-icon">  
-            <FontAwesome name="user" size="4x" /> 
-          </div>
+          <div className="hi-msg"> Hi {this.state.username}! </div>
 
           <div className="profile-icon">                       
             <FontAwesome name="pencil" size="4x" /> 
@@ -37,17 +35,14 @@ class ProfilePage extends Component {
 
         <div className="profile-body">
 
-          <div className="img-mes">
-            <div> Hi {this.state.username} </div>
             <div className="profile-pic-container">
               <img src={this.state.profilePic} className="profile-pic" alt="" />
             </div>
-          </div>
         </div>
-
-        <div className="profile-footer">
+          <div className="profile-footer">
           <Link to="/swipe" className="get-swiping-btn"> Get Swiping </Link>
         </div>
+       
       </div>
     );
   }
