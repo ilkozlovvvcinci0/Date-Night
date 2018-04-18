@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./Login.css";
-import {checkUsername, checkPassword} from "./CredentialChecks"; 
+import {checkUsername, checkUserRegistration, checkPassword} from "./CredentialChecks"; 
 
 class Login extends Component {
   constructor(props) {
@@ -16,7 +16,8 @@ class Login extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    let errors = checkUsername(this.state.username);
+    let errors = checkUserRegistration(this.state.username);
+    errors = errors.concat(checkUsername(this.state.password));
     errors = errors.concat(checkPassword(this.state.password));
     if (errors.length > 0) {
       this.setState({error: errors[0]});

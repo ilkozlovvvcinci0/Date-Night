@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "./SignUp.css";
-import {checkUsername, checkEmail, checkPassword} from "./CredentialChecks"; 
+import {checkUsername, checkUserAvailability, checkEmail, checkEmailAvailability, checkPassword} 
+from "./CredentialChecks"; 
 
 class SignUp extends Component {
   constructor(props) {
@@ -18,7 +19,9 @@ class SignUp extends Component {
   handleSubmit(event) {
     event.preventDefault();
     let errors = checkUsername(this.state.username);
+    errors = errors.concat(checkUserAvailability(this.state.username));
     errors = errors.concat(checkEmail(this.state.email));
+    errors = errors.concat(checkEmailAvailability(this.state.email));
     errors = errors.concat(checkPassword(this.state.password));
     if (errors.length > 0) {
       this.setState({error: errors[0]});
