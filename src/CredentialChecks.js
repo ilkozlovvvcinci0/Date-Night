@@ -1,8 +1,9 @@
+import {isUserRegistered} from "./Users";
+
 export function checkUserRegistration(username) {
   let errors = [];
-  let registeredUser = ["Meredith35","Brady9", "Mat8", "WaveyDon100", "Kesha90", "Lauren87", "Fran3"]; 
 
-  if(registeredUser.indexOf(username) < 0) {
+  if(!isUserRegistered(username)) {
     errors.push("This is not a registered username! Please go to Sign Up from the home page");
   }
 
@@ -23,9 +24,8 @@ export function checkUsername(username) {
 
 export function checkUserAvailability(username) {
   let errors = [];
-  let registeredUser = ["Meredith35","Brady9", "Mat8", "WaveyDon100", "Kesha90", "Lauren87", "Fran3"]; 
 
-  if(registeredUser.indexOf(username) > 0) {
+  if(isUserRegistered(username)) {
     errors.push("Username is already registered! Please choose another");
   }
 

@@ -8,6 +8,10 @@ let userDatabase = {
 	"Kesha90": {image: "kesha.jpg", matches: ["WaveyDon100"], age: 21, occupation: "Singer/Dancer", about: "Music is my passion! I'm wild and free-spirited. And will probably beat you on Fifa!! :-)"}
 };
 
+export function isUserRegistered(username) {
+	return username in userDatabase;
+}
+
 export function getUserImage(username) {
 	return userDatabase[username]["image"];
 }
