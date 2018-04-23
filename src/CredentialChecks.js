@@ -1,4 +1,4 @@
-import {isUserRegistered} from "./Users";
+import {isUserRegistered, isEmailRegistered} from "./Users";
 
 export function checkUserRegistration(username) {
   let errors = [];
@@ -46,10 +46,8 @@ export function checkEmail(email) {
 
 export function checkEmailAvailability(email) {
   let errors = [];
-  let takenEmails = ["meredith@gmail.com","brady@gmail.com", "mat@hotmail.co.uk", "wdon@yahoo.com", 
-  "keesh90@gmail.com", "lrn@yahoo.com", "franpers@googlemail.com"]; 
   
-  if(takenEmails.indexOf(email) > 0) {
+  if(isEmailRegistered(email)) {
     errors.push("Email is already registered! Please choose another!");
   }
     

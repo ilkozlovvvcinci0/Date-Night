@@ -1,15 +1,19 @@
 let userDatabase = {
-	"Meredith35": {image: "meredith.jpg", matches: [""], age: 62, occupation: "retired", about: "Need help finding my teeth..."},
-	"Brady9": {image: "brady.jpg", matches: ["Lauren87", "Fran3"], age: 30, occupation: "Front-end Developer", about: "Hi, im a big believer in energy and being the best person you can be. Hopefully you're my type ;-)"},
-	"Mat8": {image: "mat.jpg", matches: ["Kesha90"], age: 33, occupation: "Software Engineer", about: "Hi, lets see if this is as bad as people say haha"},
-	"WaveyDon100": {image: "wavey.jpg", matches: ["Kesha90"], age: 27, occupation: "Personal Trainer", about: "Confident and assertive, always go for what I want. Sagittarius :-)"},
-	"Lauren87": {image: "lauren.jpg", matches: ["Brady9"], age: 26, occupation: "Actress/Model", about: "I'm pretty shy so you'll probably have to make the first move haha. Lets hope you won't regret it :-) L xx"},
-	"Fran3": {image: "francesca.jpg", matches: ["Mat8"], age: 24, occupation: "Graphic Designer", about: "Quirky/soft rock type. I like beards, Vans, intellect and adventure...and tacos :-)"},
-	"Kesha90": {image: "kesha.jpg", matches: ["WaveyDon100"], age: 21, occupation: "Singer/Dancer", about: "Music is my passion! I'm wild and free-spirited. And will probably beat you on Fifa!! :-)"}
+	"Meredith35": {image: "meredith.jpg", matches: [""], email: "meredith@gmail.com", age: 62, occupation: "retired", about: "Need help finding my teeth..."},
+	"Brady9": {image: "brady.jpg", matches: ["Lauren87", "Fran3"], email: "brady@gmail.com", age: 30, occupation: "Front-end Developer", about: "Hi, im a big believer in energy and being the best person you can be. Hopefully you're my type ;-)"},
+	"Mat8": {image: "mat.jpg", matches: ["Kesha90"], email: "mat@hotmail.co.uk", age: 33, occupation: "Software Engineer", about: "Hi, lets see if this is as bad as people say haha"},
+	"WaveyDon100": {image: "wavey.jpg", matches: ["Kesha90"], email: "wdon@yahoo.com", age: 27, occupation: "Personal Trainer", about: "Confident and assertive, always go for what I want. Sagittarius :-)"},
+	"Lauren87": {image: "lauren.jpg", matches: ["Brady9"], email: "lrn@yahoo.com", age: 26, occupation: "Actress/Model", about: "I'm pretty shy so you'll probably have to make the first move haha. Lets hope you won't regret it :-) L xx"},
+	"Fran3": {image: "francesca.jpg", matches: ["Mat8"], email: "franpers@googlemail.com", age: 24, occupation: "Graphic Designer", about: "Quirky/soft rock type. I like beards, Vans, intellect and adventure...and tacos :-)"},
+	"Kesha90": {image: "kesha.jpg", matches: ["WaveyDon100"], email: "keesh90@gmail.com", age: 21, occupation: "Singer/Dancer", about: "Music is my passion! I'm wild and free-spirited. And will probably beat you on Fifa!! :-)"}
 };
 
 export function isUserRegistered(username) {
 	return username in userDatabase;
+}
+
+export function isEmailRegistered(email) {
+	return email in userDatabase;
 }
 
 export function getUserImage(username) {
