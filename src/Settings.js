@@ -5,14 +5,17 @@ class Settings extends Component {
   constructor(props) {
     super(props);
       this.state = {
-        value: ""
+        distanceVal: "",
+        ageVal: "",
       };
 
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    let slider = {};
+    slider[event.target.name] = event.target.value;
+    this.setState(slider);
   }
 
   render() {
@@ -28,9 +31,9 @@ class Settings extends Component {
           <div className="max-form">
             <div> Maximum Distance (km): </div>
             <form className="form">
-              <input className="input" type="range" min="0" max="150"
+              <input className="input" type="range" name="distanceVal" min="0" max="150"
               onChange = {this.handleChange} />
-              <input className="field" type="text" value = {this.state.value} />
+              <input className="field" type="text" value = {this.state.distanceVal} />
             </form>
           </div>
         </div>
@@ -39,9 +42,9 @@ class Settings extends Component {
           <div className="age-form">
             <div> Age Range: </div>
             <form className="form">
-              <input className="input" type="range" min="18" max="70"
+              <input className="input" type="range" name="ageVal" min="18" max="70"
               onChange = {this.handleChange} />
-              <input className="field" type="text" value={this.state.value} />
+              <input className="field" type="text" value={this.state.ageVal} />
             </form>
           </div>
         </div>
