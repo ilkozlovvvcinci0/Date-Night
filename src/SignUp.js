@@ -34,12 +34,13 @@ class SignUp extends Component {
   render() {
     let days = [];
     for (let day = 1; day <= 31; day++) {
-      days.push((<option value="{day}">{day}</option>))
+      days.push((<option value="{day}" key={day}> {day} </option>))
     }
 
+    
     let years = [];
     for (let year = 1957; year <= 1999; year++) {
-      years.push((<option value="{year}">{year}</option>))
+      years.push((<option value="{year}" key={year}> {year} </option>))
     }
 
     return (
@@ -74,7 +75,7 @@ class SignUp extends Component {
         <div className="field-con">
           <label className="label-2">
             Date of Birth
-            <select className="dropdown-day" value={this.state.value} onChange={this.handleChange}>
+            <select className="dropdown-day" id="day" value={this.state.value} onChange={this.handleChange}>
               {days}
             </select>
 
