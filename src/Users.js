@@ -13,7 +13,13 @@ export function isUserRegistered(username) {
 }
 
 export function isEmailRegistered(email) {
-	return email in userDatabase;
+	for (let username in userDatabase) {
+		let registeredEmail = userDatabase[username]['email']
+		if (registeredEmail === email) {
+			return true;
+		}
+	}
+	return false;
 }
 
 export function getUserImage(username) {
