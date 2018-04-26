@@ -43,7 +43,6 @@ export function checkEmail(email) {
    return errors;
 }
 
-
 export function checkEmailAvailability(email) {
   let errors = [];
   

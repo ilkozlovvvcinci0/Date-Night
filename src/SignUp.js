@@ -37,7 +37,13 @@ class SignUp extends Component {
       days.push((<option value="{day}" key={day}> {day} </option>))
     }
 
-    
+    let months = ["January", "February", "March"];
+    let monthOptions = [];
+    for (let monthIndex in months) {
+      let month = months[monthIndex];
+      monthOptions.push((<option value="{month}" key={month}> {month} </option>))
+    }
+
     let years = [];
     for (let year = 1957; year <= 1999; year++) {
       years.push((<option value="{year}" key={year}> {year} </option>))
@@ -80,18 +86,7 @@ class SignUp extends Component {
             </select>
 
             <select className="dropdown-month-year" value={this.state.value} onChange={this.handleChange}>
-              <option value="January">January</option>
-              <option value="February">February</option>
-              <option value="March">March</option>
-              <option value="April">April</option>
-              <option value="May">May</option>
-              <option value="June">June</option>
-              <option value="July">July</option>
-              <option value="August">August</option>
-              <option value="September">September</option>
-              <option value="October">October</option>
-              <option value="November">November</option>
-              <option value="December">December</option>
+              {monthOptions}
             </select> 
 
             <select className="dropdown-month-year" value={this.state.value} onChange={this.handleChange}>
