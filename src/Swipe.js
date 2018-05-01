@@ -3,8 +3,8 @@ import "./Swipe.css";
 import faStyles from "font-awesome/css/font-awesome.css";
 import FontAwesome from "react-fontawesome"
 import Carousel from "nuka-carousel";
-import {Link} from "react-router-dom";
 import {getUserMatches, getUsername} from "./Users";
+import {SwipeItem} from "./SwipeItem.js";
 
 class Swipe extends Component {
   constructor(props) {
@@ -48,35 +48,9 @@ class Swipe extends Component {
 
           >
 
-            <div className="pic-container">
-              <div className="swipe-pic-container">
-                <div className="i-btn-con">
-                  <Link to="/view-user-profile/Fran3" className="vup-link"><button type="button"
-                  className="i-btn"> i </button></Link>
-                </div>
-                <img src="assets/img/francesca.jpg" className="profile-pic" alt="" />
-              </div>
-            </div>
-
-            <div className="pic-container">
-              <div className="swipe-pic-container">
-                <div className="i-btn-con">
-                  <Link to="/view-user-profile/Kesha90" className="vup-link"><button type="button"
-                  className="i-btn"> i </button></Link>
-                </div>
-                <img src="assets/img/kesha.jpg" className="profile-pic" alt="" />
-              </div>
-            </div>
-
-            <div className="pic-container">
-              <div className="swipe-pic-container">
-                <div className="i-btn-con">
-                  <Link to="/view-user-profile/Lauren87" className="vup-link"><button type="button"
-                  className="i-btn"> i </button></Link>
-                </div>
-                <img src="assets/img/lauren.jpg" className="profile-pic" alt=""/>
-              </div>
-            </div>
+            <SwipeItem username="Fran3" image="francesca.jpg" />
+            <SwipeItem username="Kesha90" image="kesha.jpg" />
+            <SwipeItem username="Lauren87" image="lauren.jpg" />
 
           </Carousel>
         

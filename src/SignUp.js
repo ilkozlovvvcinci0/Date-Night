@@ -37,7 +37,8 @@ class SignUp extends Component {
       days.push((<option value="{day}" key={day}> {day} </option>))
     }
 
-    let months = ["January", "February", "March"];
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August",
+    "September", "October", "November", "December"];
     let monthOptions = [];
     for (let monthIndex in months) {
       let month = months[monthIndex];
