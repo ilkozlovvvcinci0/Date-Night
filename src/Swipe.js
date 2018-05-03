@@ -46,6 +46,10 @@ class Swipe extends Component {
               <FontAwesome name="check" className="check-icon" size="3x" onClick={() => this.onTick(currentSlide, nextSlide)} /> 
             )}
 
+            renderBottomCenterControls={({ }) => (
+              <div> </div>
+            )}
+
           >
 
             <SwipeItem username="Fran3" image="francesca.jpg" />
