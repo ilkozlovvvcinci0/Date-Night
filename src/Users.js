@@ -51,3 +51,7 @@ export function getUserOccupation(username) {
 export function getUserAboutMe(username) {
 	return userDatabase[username]["about"];
 }
+
+export function getInterestUsernames() {
+	return ["Fran3", "Kesha90", "Lauren87"];
+}

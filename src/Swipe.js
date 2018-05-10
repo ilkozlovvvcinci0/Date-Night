@@ -3,7 +3,7 @@ import "./Swipe.css";
 import faStyles from "font-awesome/css/font-awesome.css";
 import FontAwesome from "react-fontawesome"
 import Carousel from "nuka-carousel";
-import {getUserMatches, getUsername} from "./Users";
+import {getUserMatches, getUsername, getUserImage, getInterestUsernames} from "./Users";
 import {SwipeItem} from "./SwipeItem.js";
 
 class Swipe extends Component {
@@ -30,6 +30,14 @@ class Swipe extends Component {
   }
 
   render() {
+    let interestUsernames = getInterestUsernames();
+    let swipeItems = [];
+    for (let swipeIndex in interestUsernames) {
+      let interestName = interestUsernames[swipeIndex];
+      swipeItems.push((<SwipeItem username={interestName} image={getUserImage(interestName)} 
+      key={SwipeItem} />))
+    }
+
     return (
       <div className="swipe-container">  
         <div className="swipe-body">  
@@ -52,9 +60,7 @@ class Swipe extends Component {
 
           >
 
-            <SwipeItem username="Fran3" image="francesca.jpg" />
-            <SwipeItem username="Kesha90" image="kesha.jpg" />
-            <SwipeItem username="Lauren87" image="lauren.jpg" />
+          {swipeItems}
 
           </Carousel>
         
