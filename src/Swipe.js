@@ -19,7 +19,7 @@ class Swipe extends Component {
       2: "Lauren87"
     }
 
-    let userMatches = getUserMatches(getUsername());
+    let userMatches = getUserMatches();
     let currentCandidate = slideUser[currentSlide];
 
     if (userMatches.indexOf(currentCandidate) >= 0) {
@@ -34,8 +34,7 @@ class Swipe extends Component {
     let swipeItems = [];
     for (let swipeIndex in interestUsernames) {
       let interestName = interestUsernames[swipeIndex];
-      swipeItems.push((<SwipeItem username={interestName} image={getUserImage(interestName)} 
-      key={SwipeItem} />))
+      swipeItems.push((<SwipeItem username={interestName} image={getUserImage(interestName)} key={interestName} />))
     }
 
     return (
