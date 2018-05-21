@@ -1,8 +1,6 @@
 .sign-up-con {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
-	height: 100%;
 	background-color: #666;
 }
 
@@ -10,8 +8,6 @@
 	display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
-  height: 100%;
   margin-top: 55px;
   text-align: center;
   font-size: 1.8em;
@@ -23,14 +19,12 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
   margin-bottom: 50px;
 }
 
 .label-1 {
   display: flex;
   width: 100%;
-  height: 100%;
   justify-content: center;
 }
 
@@ -40,7 +34,7 @@
 
 .field-user-pass {
   width: 30%;
-  height: 37%;
+  height: 90%;
   font-family: geneva;
   font-size: 1em;
   font-weight: 150;
@@ -52,7 +46,7 @@
 
 .field-email {
   width: 34%;
-  height: 37%;
+  height: 90%;
   font-family: geneva;
   font-size: 1em;
   font-weight: 150;
@@ -81,25 +75,23 @@
 .sun-btn-con {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  width: 60%;
-  height: 8.5%
+  justify-content: center;
 }
 
 .sign-up-now {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 30%;
+  padding: 15px 22px;
   font-size: 0.95em;
   border-radius: 10px;
   border-width: 0px;
   color: #990000;
 }
 
-.err-con {
+.err-con-sign-up {
   display: flex;
-  margin-top: 50px;
+  margin: 50px 0 72px;
   justify-content: center;
 }
 

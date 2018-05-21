@@ -31,16 +31,16 @@ class Login extends Component {
     return (
       <div className="login"> 
       	<form className="login-form" onSubmit={this.handleSubmit}>
-      		<div className="log-user-pass-con">
-		        <label>
+      		<div className="log-user-con">
+		        <label className="log-label">
 		          Username
 		          <input className="log-pass-user" type="text" value={this.state.username} 
               onChange={event => this.setState({username: event.target.value})} /> 
 		        </label>
       		</div>
 
-      		<div className="log-user-pass-con">
-      			<label>
+      		<div className="log-pass-con">
+      			<label className="log-label">
 		          Password
 		          <input className="log-pass-user" type="password" value={this.state.password}  
               onChange={event => this.setState({password: event.target.value})} /> 
@@ -50,7 +50,7 @@ class Login extends Component {
       		<div className="log-btn-con">
 		        <input type="submit" value="Login" className="login-btn" />
 		      </div>
-		      <div className="err-con">
+		      <div className="err-con-log">
             <div className="err">{this.state.error}</div>
           </div>
 		    </form>

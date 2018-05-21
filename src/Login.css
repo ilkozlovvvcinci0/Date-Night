@@ -1,16 +1,6 @@
-.html, body {
-  width: 100%;
-  height: 100%;
-}
-
-.body {
-  margin: 0;
-}
-
 .login {
   display: flex;
   flex-direction: column;
-  height: 100%;
   background-color: #777;
 }
 
@@ -19,27 +9,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 50px;
   text-align: center;
   font-size: 1.8em;
   font-family: geneva;
   border-width: 0px;
 }
 
-.log-user-pass-con {
+.log-user-con {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
-  height: 15%;
+  margin-top: 183px;
   color: #000;
 }
 
+.log-pass-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #000;
+}
+
+.log-label {
+  margin-bottom: 50px;
+}
+
 .log-pass-user {
-	width: 70%;
-	height: 40%;
+	height: 90%;
 	font-family: geneva;
 	font-size: 1.3em;
 	font-weight: 150;
@@ -54,33 +50,31 @@
   flex-direction: row;
   justify-content: center;
   margin: 0;
-  width: 67%;
-  height: 9%
-}
-
-.log-err-mes {
-	display: flex;
-	margin: 0 30px 0 0; 
-	width: 50%;
-	font-style: italic; 
-	font-size: 1.5em;
-	color: #cd0000; 
 }
 
 .login-btn {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	width: 20%;
 	font-size: 1.15em;
+  padding: 15px 40px;
 	border-radius: 10px;
   border-width: 0px;
   color: #990000;
 }
 
-.err-con {
+.err-con-log {
 	display: flex;
-	margin-top: 50px;
+	margin: 50px 0 183px 0;
+}
+
+.log-err-mes {
+  display: flex;
+  margin: 0 30px 0 0; 
+  width: 50%;
+  font-style: italic; 
+  font-size: 1.5em;
+  color: #cd0000; 
 }
 
 .err {

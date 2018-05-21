@@ -15,7 +15,10 @@ class Home extends Component {
             <li><Link to="/login"> Login </Link></li>
           </button>
         </div>
-        <div className="date-night"> Date Night </div>
+
+        <div className="date-night-con">
+          <div className="date-night"> Date Night </div>
+        </div>
       </div>
     );
   }

@@ -117,7 +117,7 @@ class SignUp extends Component {
         <div className="sun-btn-con">
           <input type="submit" value="Sign Up Now!" className="sign-up-now" />
         </div>
-         <div className="err-con">
+         <div className="err-con-sign-up">
             <div className="err">{this.state.error}</div>
          </div>
 
