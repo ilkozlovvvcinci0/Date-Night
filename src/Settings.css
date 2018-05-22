@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 85px;
+	margin-top: 95px;
 	font-family: geneva;
 	font-size: 1.2em;
 }
@@ -83,12 +83,13 @@
 	display: flex;
 	justify-content: space-evenly;
   width: 100%;
+ 	margin-top: 50px;
 }
 
 .new-matches {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .text-check {
@@ -100,7 +101,7 @@
 .set-messages {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .switch_box{
@@ -109,7 +110,6 @@
 	display: flex;
 	max-width: 200px;
 	min-width: 200px;
-	height: 200px;
 	-webkit-box-pack: center;
   -ms-flex-pack: center;
 	justify-content: center;
