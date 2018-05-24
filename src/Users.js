@@ -53,9 +53,21 @@ export function getUserAboutMe(username) {
 }
 
 export function getInterestUsernames() {
-	return ["Fran3", "Kesha90", "Lauren87", "Meredith35", "Brady9", "Mat8", "WaveyDon100"];
+	let loggedInUser = getUsername()
+	let seeking = userDatabase[loggedInUser]["seeking"]
+	
+	let interestUsernames = []
+	for (let candidateUsername in userDatabase) {
+		let candidateSex = userDatabase[candidateUsername]["sex"]
+ 		
+ 		if (candidateSex === seeking) {
+ 			interestUsernames.push(candidateUsername);
+		}
+	}
+	return interestUsernames;
 }
 
+
 // export function getInterestUsernames() {
-// 	return ["Fran3", "Kesha90", "Lauren87"];
+// 	return ["Fran3", "Kesha90", "Lauren87", "Meredith35", "Brady9", "Mat8", "WaveyDon100"];
 // }

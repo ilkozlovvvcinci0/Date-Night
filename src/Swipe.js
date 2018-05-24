@@ -3,7 +3,7 @@ import "./Swipe.css";
 import faStyles from "font-awesome/css/font-awesome.css";
 import FontAwesome from "react-fontawesome"
 import Carousel from "nuka-carousel";
-import {getUserMatches, getUsername, getUserImage, getInterestUsernames} from "./Users";
+import {getUserMatches, getUserImage, getInterestUsernames} from "./Users";
 import {SwipeItem} from "./SwipeItem.js";
 
 class Swipe extends Component {
