@@ -68,10 +68,12 @@ export function getInterestUsernames() {
 		let candidateSex = userDatabase[candidateUsername]["sex"]
 		let candidateSeeks = userDatabase[candidateUsername]["seeking"]
 
-	 		if (candidateSex === loggedInUserSeeks && candidateSeeks === loggedInUserSex) {
+	 		if (candidateSex === loggedInUserSeeks && candidateSeeks === loggedInUserSex &&
+	 		loggedInUser !== candidateUsername )  {
+	 			
 	 			interestUsernames.push(candidateUsername);
-			}
-			
+			} 
+
 		// if (candidateSex === loggedInUserSeeks) {
 	 // 		interestUsernames.push(candidateUsername);
 	 // 	}
