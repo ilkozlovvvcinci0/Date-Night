@@ -1,7 +1,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  background-image: url(img/date-pic.jpg); 
+  background: url(img/date-pic.jpg) no-repeat; 
   background-size: cover; 
 }
 
@@ -64,7 +64,7 @@
 .date-night-con {
   display: flex;
   justify-content: center;
-  margin-bottom: 468px;
+  /*margin-bottom: 468px;*/
 }
 
 .date-night {

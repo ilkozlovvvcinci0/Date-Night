@@ -6,6 +6,11 @@ let userDatabase = {
 	"Fran3": {sex: "female", seeking: "male", image: "francesca.jpg", matches: ["Mat8"], email: "franpers@googlemail.com", age: 24, occupation: "Graphic Designer", about: "Quirky/soft rock type. I like beards, Vans, intellect and adventure...and tacos :-)"},
 	"Kesha90": {sex: "female", seeking: "male", image: "kesha.jpg", matches: ["WaveyDon100"], email: "keesh90@gmail.com", age: 21, occupation: "Singer/Dancer", about: "Music is my passion! I'm wild and free-spirited. And will probably beat you on Fifa!! :-)"},
 	"Lauren87": {sex: "female", seeking: "male", image: "lauren.jpg", matches: ["Brady9"], email: "lrn@yahoo.com", age: 26, occupation: "Actress/Model", about: "I'm pretty shy so you'll probably have to make the first move haha. Lets hope you won't regret it :-) L xx"},
+	"Rhea8": {sex: "female", seeking: "female", image: "rhea.jpg", matches: ["Zena90"], email: "rhea_bb@tinder.com", age: 27, occupation: "Finance Analyst at Tinder", about: "Do what you say, say what you do. Just be real."},
+	"Donald-Br0wn": {sex: "male", seeking: "male", image: "donald.jpg", matches: ["Sal_R"], email: "donaldbrown@googlemail.com", age: 51, occupation: "Insurance Strategy Director", about: "Tired of being alone and tending only to work. Looking for someone funny, genuine and share happy memories with x"},
+	"Zena90": {sex: "female", seeking: "female", image: "zena.jpg", matches: ["Rhea8"], email: "zenapal@gmail.com", age: 28, occupation: "Fashion Blogger", about: "Massive foodie! Definitely the way to my heart x"},
+	"Sal_R": {sex: "male", seeking: "male", image: "sal.jpg", matches: ["Donald-Br0wn"], email: "salvatorerramone@fendi.com", age: 47, occupation: "Personal Shopper at Fendi", about: "Must be glam! :-) Fashion, food and travel"},
+
 };
 
 export function isUserRegistered(username) {
@@ -54,20 +59,26 @@ export function getUserAboutMe(username) {
 
 export function getInterestUsernames() {
 	let loggedInUser = getUsername()
-	let seeking = userDatabase[loggedInUser]["seeking"]
+	let loggedInUserSex = userDatabase[loggedInUser]["sex"]
+	let loggedInUserSeeks = userDatabase[loggedInUser]["seeking"]
 	
 	let interestUsernames = []
+	
 	for (let candidateUsername in userDatabase) {
 		let candidateSex = userDatabase[candidateUsername]["sex"]
- 		
- 		if (candidateSex === seeking) {
- 			interestUsernames.push(candidateUsername);
-		}
+		let candidateSeeks = userDatabase[candidateUsername]["seeking"]
+
+	 		if (candidateSex === loggedInUserSeeks && candidateSeeks === loggedInUserSex) {
+	 			interestUsernames.push(candidateUsername);
+			}
+			
+		// if (candidateSex === loggedInUserSeeks) {
+	 // 		interestUsernames.push(candidateUsername);
+	 // 	}
+
 	}
+	
 	return interestUsernames;
 }
 
 
-// export function getInterestUsernames() {
-// 	return ["Fran3", "Kesha90", "Lauren87", "Meredith35", "Brady9", "Mat8", "WaveyDon100"];
-// }

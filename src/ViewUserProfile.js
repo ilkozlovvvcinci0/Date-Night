@@ -3,7 +3,7 @@ import "./ViewUserProfile.css";
 import {getUserAge, getUserOccupation, getUserAboutMe} from "./Users.js"; 
 import {withRouter} from 'react-router';
 
-class ViewUserProfile extends React.Component {
+export class ViewUserProfile extends React.Component {
   render() {
     const {user} = this.props.match.params
     return (
