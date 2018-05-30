@@ -44,6 +44,7 @@ class Swipe extends Component {
           <Carousel
 
             wrapAround={true}
+            dragging={false}
             
             renderCenterLeftControls={({ previousSlide }) => (
               <FontAwesome name="times" className="cross-icon" size="3x" onClick={previousSlide} />

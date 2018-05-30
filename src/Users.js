@@ -73,11 +73,6 @@ export function getInterestUsernames() {
 	 			
 	 			interestUsernames.push(candidateUsername);
 			} 
-
-		// if (candidateSex === loggedInUserSeeks) {
-	 // 		interestUsernames.push(candidateUsername);
-	 // 	}
-
 	}
 	
 	return interestUsernames;
