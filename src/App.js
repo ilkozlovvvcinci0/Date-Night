@@ -9,6 +9,8 @@ import Settings from "./Settings";
 import EditProfile from "./EditProfile"; 
 import ViewUserProfile from "./ViewUserProfile"; 
 import Match from "./Match"; 
+import SendMessages from "./SendMessages"; 
+import Messages from "./Messages"; 
 import {BrowserRouter as Router, Route} from "react-router-dom";
 
 class App extends Component {
@@ -30,6 +32,8 @@ class App extends Component {
           <Route exact path="/edit-profile" component={EditProfile}/>
           <Route path="/view-user-profile/:user" component={ViewUserProfile}/>
           <Route exact path="/match/:user" component={Match}/>
+          <Route exact path="/send-messages" component={SendMessages}/>
+          <Route exact path="/messages" component={Messages}/>
         </div>
       </Router>
     );
