@@ -36,5 +36,7 @@ function vup(profileUser) {
 function getMatchUsername() {
 	let urlParams = new URLSearchParams(window.location.search);
 	return urlParams.get("match");
+
+	// view profile btn
 }
 	

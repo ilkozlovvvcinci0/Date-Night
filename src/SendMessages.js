@@ -19,7 +19,7 @@ class SendMessages extends Component {
 				
 				<div className="sm-main-body">
 	        <div className="s-msg-con">
-	          <Link to="/messages" className="messages" onclick="goMessages()"> Messages </Link>
+	          <Link to="/messages" className="messages"> Messages </Link>
 	        </div>
 	        <div className="ta-btn">
 	          <textarea className="text-area" rows="15" cols="100"></textarea>
@@ -29,8 +29,8 @@ class SendMessages extends Component {
 
 	      <div className="sm-main-footer">
 	        <div className="footer-btns">
-	          <Link to="/swipe" className="keep-swiping" onclick="goSwipe()"> Keep Swiping </Link>
-	          <button className="view-profile" onclick="vup(getMatchUsername())"> View Profile </button>
+	          <Link to="/swipe" className="keep-swiping"> Keep Swiping </Link>
+	          <button className="view-profile"> View Profile </button>
 	        </div>
 	      </div>
 
