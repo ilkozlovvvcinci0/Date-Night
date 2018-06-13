@@ -38,7 +38,7 @@ class Match extends React.Component {
         <div className="match-footer">
           <div className="match-buttons">
             <Link to="/swipe" className="keep-swiping"> Keep Swiping </Link>
-            <Link to="/send-messages" className="send-message"> Send Message </Link>
+            <Link to={`/send-messages/${user}`} className="send-message"> Send Message </Link>
           </div>
         </div>
       </div>
