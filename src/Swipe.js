@@ -3,7 +3,7 @@ import "./Swipe.css";
 import faStyles from "font-awesome/css/font-awesome.css";
 import FontAwesome from "react-fontawesome"
 import Carousel from "nuka-carousel";
-import {getUserMatches, getUserImage, getInterestUsernames} from "./Users";
+import {getUserMatches, getUsername, getUserImage, getInterestUsernames} from "./Users";
 import {SwipeItem} from "./SwipeItem.js";
 
 class Swipe extends Component {
@@ -19,7 +19,7 @@ class Swipe extends Component {
       2: "Lauren87"
     }
 
-    let userMatches = getUserMatches();
+    let userMatches = getUserMatches(getUsername());
     let currentCandidate = slideUser[currentSlide];
 
     if (userMatches.indexOf(currentCandidate) >= 0) {
