@@ -39,6 +39,19 @@ export function getUsername() {
 	return localStorage.getItem("username");
 }
 
+// export function getMatchUsername() {
+// 	let loggedInUser = getUsername()
+// 	let userMatches = userDatabase[loggedInUser]["matches"]
+
+// 	// let matches = []
+
+// 	for (let matchUsername in userMatches) {
+// 		console.log(matchUsername);
+// 	}
+
+// 	// return matches;
+// }
+
 export function getUserAge(username) {
 	return userDatabase[username]["age"];
 }

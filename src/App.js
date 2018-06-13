@@ -32,7 +32,7 @@ class App extends Component {
           <Route exact path="/edit-profile" component={EditProfile}/>
           <Route path="/view-user-profile/:user" component={ViewUserProfile}/>
           <Route exact path="/match/:user" component={Match}/>
-          <Route exact path="/send-messages" component={SendMessages}/>
+          <Route path="/send-messages/:user" component={SendMessages}/>
           <Route exact path="/messages" component={Messages}/>
         </div>
       </Router>
