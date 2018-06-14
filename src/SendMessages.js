@@ -9,7 +9,12 @@ class SendMessages extends Component {
   constructor(props) {
     super(props);
   
+	  this.hello = this.hello.bind(this);
   };
+
+  hello() {
+  	console.log("hiii");
+  }
 
   render() {
     const {user} = this.props.match.params
@@ -24,7 +29,7 @@ class SendMessages extends Component {
         </div>
         <div className="ta-btn">
           <textarea className="text-area" rows="15" cols="100"></textarea>
-          <div className="btn-send"><button className="send"> Send </button></div>
+          <div className="btn-send"><button className="send" onClick={this.hello}> Send </button></div>
         </div>
       </div>
 

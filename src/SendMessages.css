@@ -73,6 +73,7 @@
 .view-profile {
   display: flex;
   justify-content: center;
+  align-items: center;
 	width: 180px;
 	height: 45px;
 	border: 0;
@@ -82,5 +83,7 @@
 	font-size: 1.4em;
 	word-spacing: 0.2em;
 	background-color: #c1bfbf;
+  color: #000;
+	text-decoration: none;
 }
 
