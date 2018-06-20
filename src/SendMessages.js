@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import "./SendMessages.css"; 
 import {SwipeItem} from "./SwipeItem.js";
 import {withRouter} from 'react-router';
+import {getUsername} from "./Users.js";
 
 
 class SendMessages extends Component {
@@ -18,6 +19,8 @@ class SendMessages extends Component {
 
   handleSend() {
   	console.log(this.state.message);
+  	console.log(getUsername());
+  	console.log(this.props.match.params['user']);
   }
 
   handleChange(event) {
