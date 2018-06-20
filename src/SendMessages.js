@@ -21,6 +21,8 @@ class SendMessages extends Component {
   	console.log(this.state.message);
   	console.log(getUsername());
   	console.log(this.props.match.params['user']);
+  	let messages = [];
+  	messages.push(this.state.message);
   }
 
   handleChange(event) {
