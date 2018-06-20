@@ -121,15 +121,6 @@ class SignUp extends Component {
             <div className="err">{this.state.error}</div>
          </div>
 
-
-
-
-
-
-
-
-
-
       </form>
     </div>
     );

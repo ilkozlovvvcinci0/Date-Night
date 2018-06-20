@@ -8,39 +8,58 @@ import {withRouter} from 'react-router';
 class SendMessages extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+    	message: "",
+    }
   
-	  this.hello = this.hello.bind(this);
+	  this.handleSend = this.handleSend.bind(this);
+	  this.handleChange = this.handleChange.bind(this);
   };
 
-  hello() {
-  	console.log("hiii");
+  handleSend() {
+  	console.log(this.state.message);
   }
+
+  handleChange(event) {
+  	// let message = this.state.message;
+    this.setState({message: event.target.value});
+    // console.log(message);
+    // localStorage.setItem("textareaMessages", textareaMessage);
+
+    // let textareaMessages = []
+
+    // for(let textareaMessage in textareaMessages) {
+  		// textareaMessages.push(textareaMessage);
+  		// console.log(textareaMessage);
+		// }
+	}
 
   render() {
     const {user} = this.props.match.params
     let userProfile = `/view-user-profile/${user}`
 
     return (
-	  <div className="sm-con">
-			
-			<div className="sm-main-body">
-        <div className="s-msg-con">
-          <Link to="/messages" className="messages"> Messages </Link>
-        </div>
-        <div className="ta-btn">
-          <textarea className="text-area" rows="15" cols="100"></textarea>
-          <div className="btn-send"><button className="send" onClick={this.hello}> Send </button></div>
-        </div>
-      </div>
+		  <div className="sm-con">
+				
+				<div className="sm-main-body">
+	        <div className="s-msg-con">
+	          <Link to="/messages" className="messages"> Messages </Link>
+	        </div>
+	        <div className="ta-btn">
+	          <textarea type="textarea" className="text-area" rows="15" cols="100" value={this.state.message}
+	          onChange={this.handleChange}></textarea>
+	          <div className="btn-send"><button className="send" onClick={this.handleSend}> Send </button></div>
+	        </div>
+	      </div>
 
-      <div className="sm-main-footer">
-        <div className="footer-btns">
-          <Link to="/swipe" className="keep-swiping"> Keep Swiping </Link>
-          <Link to={userProfile} className="view-profile"> View Profile </Link>
-        </div>
-      </div>
+	      <div className="sm-main-footer">
+	        <div className="footer-btns">
+	          <Link to="/swipe" className="keep-swiping"> Keep Swiping </Link>
+	          <Link to={userProfile} className="view-profile"> View Profile </Link>
+	        </div>
+	      </div>
 
-	  </div>
+		  </div>
 	);
   }
 }
