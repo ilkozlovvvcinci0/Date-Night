@@ -27,17 +27,7 @@ class SendMessages extends Component {
   }
 
   handleChange(event) {
-  	// let message = this.state.message;
     this.setState({message: event.target.value});
-    // console.log(message);
-    // localStorage.setItem("textareaMessages", textareaMessage);
-
-    // let textareaMessages = []
-
-    // for(let textareaMessage in textareaMessages) {
-  		// textareaMessages.push(textareaMessage);
-  		// console.log(textareaMessage);
-		// }
 	}
 
   render() {
