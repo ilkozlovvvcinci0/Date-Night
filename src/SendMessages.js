@@ -20,7 +20,7 @@ class SendMessages extends Component {
   handleSend() {
   	console.log(this.state.message);
   	console.log(getUsername());
-  	console.log(this.props.match.params['user']);
+  	console.log(this.props.match.params["user"]);
 		let messages = JSON.parse(localStorage.getItem("messages"));
   	messages.push(this.state.message);
 		localStorage.setItem("messages", JSON.stringify(messages));
