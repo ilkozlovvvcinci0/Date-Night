@@ -22,13 +22,13 @@
 
 .send-2 {
 	display: flex;
-  width: 70px;
-  height: 35px;
+  width: 100px;
+  height: 40px;
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 10px;
   font-family: geneva;
-  font-size: 1em;
+  font-size: 1.3em;
   background-color: #329832;
   color: #fff;
 }

@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import "./Messages.css"; 
 import {withRouter} from 'react-router';
+import {getUsername} from "./Users.js";
 
 class Messages extends Component {
   constructor(props) {
@@ -10,6 +11,8 @@ class Messages extends Component {
     }
   
     this.handleReceive = this.handleReceive.bind(this);
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSend = this.handleSend.bind(this);
   };
 
   handleReceive() {
@@ -17,7 +20,20 @@ class Messages extends Component {
     let messages = JSON.parse(localStorage.getItem("messages"));
     console.log(messages);
 
- 
+
+  }
+
+  handleChange(event) {
+    this.setState({message: event.target.value});
+  }
+
+  handleSend() {
+    // console.log(this.state.message);
+    let sender = `from  ${getUsername()} :  `;
+    console.log(this.props.match.params["user"]);
+    let messages = JSON.parse(localStorage.getItem("messages"));
+    messages.push(sender + this.state.message);
+    localStorage.setItem("messages", JSON.stringify(messages));
   }
 
   render() {
