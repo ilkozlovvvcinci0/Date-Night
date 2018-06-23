@@ -1,7 +1,6 @@
 import React, {Component} from "react";
 import {Link} from "react-router-dom";
 import "./SendMessages.css"; 
-import {SwipeItem} from "./SwipeItem.js";
 import {withRouter} from 'react-router';
 import {getUsername} from "./Users.js";
 
@@ -18,7 +17,7 @@ class SendMessages extends Component {
   };
 
   handleSend() {
-  	console.log(this.state.message);
+  	// console.log(this.state.message);
   	let sender = `from  ${getUsername()} :  `;
   	console.log(this.props.match.params["user"]);
 		let messages = JSON.parse(localStorage.getItem("messages"));
