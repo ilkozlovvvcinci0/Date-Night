@@ -1,8 +1,6 @@
 import React, {Component} from "react";
-import {Link} from "react-router-dom";
 import "./Messages.css"; 
 import {withRouter} from 'react-router';
-import {getUsername} from "./Users.js";
 
 class Messages extends Component {
   constructor(props) {
@@ -20,19 +18,26 @@ class Messages extends Component {
     console.log(messages);
 
  
-
   }
 
   render() {
     const {user} = this.props.match.params
 
     return ( 
-      <button onClick={this.handleReceive}>messages</button>    
-      
+      <div className="msg-main-con">
+        <div className="msg-elements-con">
+          <button className="message-btn" onClick={this.handleReceive}> messages </button>
+          <div className="ta-btn">
+            <textarea type="textarea" className="text-area" rows="15" cols="60" value={this.state.message}
+            onChange={this.handleChange}></textarea>
+            <div className="btn-send"><button className="send-2" onClick={this.handleSend}> Send </button></div>
+          </div>
+
+
     
 
-
-
+        </div>
+      </div>
     );
   }
 }
