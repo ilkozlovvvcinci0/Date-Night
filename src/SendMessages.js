@@ -17,10 +17,12 @@ class SendMessages extends Component {
   };
 
   handleSend() {
-  	let sender = `from  ${getUsername()} :  `;
-  	let recipient = this.props.match.params["user"];
 		let messages = JSON.parse(localStorage.getItem("messages") || "[]");
-  	messages.push(this.state.message);
+  	messages.push({
+  		"message": this.state.message,
+  		"sender": getUsername(),
+  		"recipient": this.props.match.params["user"],
+  	});
 		localStorage.setItem("messages", JSON.stringify(messages));
   }
 
