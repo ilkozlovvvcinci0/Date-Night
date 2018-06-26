@@ -17,13 +17,13 @@ class SendMessages extends Component {
   };
 
  	handleSend() {
-	 	// console.log(this.state.message);
 	 	let sender = `from  ${getUsername()} :  `;
   	let recipient = (this.props.match.params["user"]);
-  	let messageFor = `message_for_${recipient}`;
+  	// let messageFor = `message_for_${recipient}`;
 		let messages = JSON.parse(localStorage.getItem("messages"));
   	messages.push(sender + this.state.message);
 		localStorage.setItem(`message_for_${recipient}`, JSON.stringify(messages));
+		console.log(messages);
 	}
 
   handleChange(event) {
