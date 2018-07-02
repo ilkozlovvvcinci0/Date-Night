@@ -16,9 +16,16 @@ class Messages extends Component {
   };
 
   handleReceive() {
-    // console.log(this.props.match.params["user"]);
-    let messages = JSON.parse(localStorage.getItem("messages"));
-    console.log(messages);
+    let username = getUsername();
+    // let userMessages = "[]";
+    let userMessages = JSON.parse(localStorage.getItem("m") || "[]");
+    userMessages.push(getUsername());
+    localStorage.setItem("userMessages", JSON.stringify(userMessages));
+
+
+    // console.log(userMessages);
+    // let messages = JSON.parse(localStorage.getItem("messages"));
+    // console.log(messages);
 
 
   }
