@@ -17,7 +17,7 @@ class Messages extends Component {
 
   handleReceive() {
     let username = getUsername();
-    let userMessages = JSON.parse(localStorage.getItem("m") || "[]");
+    let userMessages = JSON.parse(localStorage.getItem("userMessages") || "[]");
     userMessages.push({
       "message": this.state.message,
       "sender": getUsername(),
