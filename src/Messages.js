@@ -17,17 +17,13 @@ class Messages extends Component {
 
   handleReceive() {
     let username = getUsername();
-    // let userMessages = "[]";
     let userMessages = JSON.parse(localStorage.getItem("m") || "[]");
-    userMessages.push(getUsername());
+    userMessages.push({
+      "message": this.state.message,
+      "sender": getUsername(),
+      "recipient": this.props.match.params["user"],
+    });
     localStorage.setItem("userMessages", JSON.stringify(userMessages));
-
-
-    // console.log(userMessages);
-    // let messages = JSON.parse(localStorage.getItem("messages"));
-    // console.log(messages);
-
-
   }
 
   handleChange(event) {
@@ -35,7 +31,6 @@ class Messages extends Component {
   }
 
   handleSend() {
-    // console.log(this.state.message);
     let sender = `from  ${getUsername()} :  `;
     console.log(this.props.match.params["user"]);
     let messages = JSON.parse(localStorage.getItem("messages"));
