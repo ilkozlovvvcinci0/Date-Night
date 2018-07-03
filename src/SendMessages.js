@@ -10,6 +10,7 @@ class SendMessages extends Component {
     super(props);
     this.state = {
     	message: "",
+    	sender: getUsername(),
     }
   
 	  this.handleSend = this.handleSend.bind(this);
@@ -24,6 +25,7 @@ class SendMessages extends Component {
   		"recipient": this.props.match.params["user"],
   	});
 		localStorage.setItem("messages", JSON.stringify(messages));
+    localStorage.setItem("sender", getUsername());
   }
 
   handleChange(event) {
