@@ -4,13 +4,11 @@ import "./SendMessages.css";
 import {withRouter} from 'react-router';
 import {getUsername} from "./Users.js";
 
-
 class SendMessages extends Component {
   constructor(props) {
     super(props);
     this.state = {
     	message: "",
-    	sender: getUsername(),
     }
   
 	  this.handleSend = this.handleSend.bind(this);
@@ -25,7 +23,6 @@ class SendMessages extends Component {
   		"recipient": this.props.match.params["user"],
   	});
 		localStorage.setItem("messages", JSON.stringify(messages));
-    localStorage.setItem("sender", getUsername());
   }
 
   handleChange(event) {
