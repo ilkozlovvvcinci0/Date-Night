@@ -18,12 +18,15 @@ class Messages extends Component {
 
     for (let indexOfMessage in allMessages) {
       let message = allMessages[indexOfMessage];
-      console.log(message);
-      console.log(message["recipient"]);
 
-      // if recipient === 
+      if (message["recipient"] === recipient) {
+        recipientMessages.push(message);
+        console.log(recipientMessages);
+      }
+
+        // console.log("Hey Mat I done it!");
     }
-    return [];
+    // return recipientMessages;
   }
 
   render() {
