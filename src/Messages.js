@@ -15,6 +15,7 @@ class Messages extends Component {
     let recipient = getUsername();
     let allMessages = JSON.parse(localStorage.getItem("messages"));
     let recipientMessages = []
+    let sentMessages = []
 
     for (let indexOfMessage in allMessages) {
       let message = allMessages[indexOfMessage];
@@ -24,8 +25,12 @@ class Messages extends Component {
         console.log(recipientMessages);
       }
 
-        // console.log("Hey Mat I done it!");
+      if (message["sender"] === "Mat8") {
+        console.log("Yo Mat!");
+      }
+
     }
+
     // return recipientMessages;
   }
 
