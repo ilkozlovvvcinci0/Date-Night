@@ -14,20 +14,20 @@ class Messages extends Component {
   getMessages() {
     let recipient = getUsername();
     let allMessages = JSON.parse(localStorage.getItem("messages"));
-    let recipientMessages = []
-    let sentMessages = []
+    let userMessages = []
 
     for (let indexOfMessage in allMessages) {
       let message = allMessages[indexOfMessage];
 
       if (message["recipient"] === recipient) {
-        recipientMessages.push(message);
+        userMessages.push(message);
       }
       
-    let sender = message["sender"];
+      let sender = message["sender"];
+      
       if (message["sender"] === recipient) {
-        sentMessages.push(message);
-        console.log(sentMessages);
+        userMessages.push(message);
+        console.log(userMessages);
       }
     }
 
