@@ -15,6 +15,7 @@ class Messages extends Component {
     let recipient = getUsername();
     let allMessages = JSON.parse(localStorage.getItem("messages"));
     let userMessages = []
+    let convos = []
 
     for (let indexOfMessage in allMessages) {
       let message = allMessages[indexOfMessage];
@@ -25,18 +26,24 @@ class Messages extends Component {
       
       let sender = message["sender"];
       
-      if (message["sender"] === recipient) {
+      if (sender === recipient) {
         userMessages.push(message);
-        console.log(userMessages);
+        // console.log(userMessages);
+      }
+
+      if (sender === "Fran3" && recipient === "Mat8") {
+        convos.push(message);
+        console.log(convos);
       }
     }
 
-    // return recipientMessages;
+    // return userMessages;
   }
+
 
   render() {
     return ( 
-      <div></div>
+      <div> </div>
     );
   }
 }
