@@ -31,7 +31,7 @@ class Messages extends Component {
         // console.log(userMessages);
       }
 
-      if (sender === "Fran3" && recipient === "Mat8") {
+      if (sender === "Fran3" && recipient === recipient) {
         convos.push(message);
         console.log(convos);
       }
