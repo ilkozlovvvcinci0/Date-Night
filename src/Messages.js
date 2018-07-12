@@ -19,6 +19,8 @@ class Messages extends Component {
 
     for (let indexOfMessage in allMessages) {
       let message = allMessages[indexOfMessage];
+      let particularUser = this.props.match.params["user"];
+      console.log(particularUser)
 
       if (message["recipient"] === loggedInUser || message["sender"] === loggedInUser) {
         userMessages.push(message);
@@ -36,23 +38,3 @@ class Messages extends Component {
 }
 
 export default withRouter(Messages);
-
-    
-
-
-
-
-
-
-
-
-        
-  
-
-		 
-			  	
-   
-
-
-
-
