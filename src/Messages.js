@@ -23,7 +23,9 @@ class Messages extends Component {
       console.log(particularUser)
 
       if (message["recipient"] === loggedInUser || message["sender"] === loggedInUser) {
-        userMessages.push(message);
+        if (message["recipient"] === particularUser || message["sender"] === particularUser) {
+          userMessages.push(message);
+        }
       }
     }
     console.log(userMessages);
