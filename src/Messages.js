@@ -15,20 +15,16 @@ class Messages extends Component {
     let loggedInUser = getUsername();
     let allMessages = JSON.parse(localStorage.getItem("messages"));
     let userMessages = []
-    let convos = []
-
     for (let indexOfMessage in allMessages) {
       let message = allMessages[indexOfMessage];
       let particularUser = this.props.match.params["user"];
-      console.log(particularUser)
-
       if (message["recipient"] === loggedInUser || message["sender"] === loggedInUser) {
         if (message["recipient"] === particularUser || message["sender"] === particularUser) {
           userMessages.push(message);
         }
       }
     }
-    console.log(userMessages);
+    return userMessages;
   }
 
 
