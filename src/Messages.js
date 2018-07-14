@@ -14,17 +14,17 @@ class Messages extends Component {
   getMessages() {
     let loggedInUser = getUsername();
     let allMessages = JSON.parse(localStorage.getItem("messages"));
-    let userMessages = []
+    let loggedInUserMessages = []
     for (let indexOfMessage in allMessages) {
       let message = allMessages[indexOfMessage];
-      let particularUser = this.props.match.params["user"];
+      let particularRecipient = this.props.match.params["user"];
       if (message["recipient"] === loggedInUser || message["sender"] === loggedInUser) {
-        if (message["recipient"] === particularUser || message["sender"] === particularUser) {
-          userMessages.push(message);
+        if (message["recipient"] === particularRecipient || message["sender"] === particularRecipient) {
+          loggedInUserMessages.push(message);
         }
       }
     }
-    return userMessages;
+    return loggedInUserMessages;
   }
 
 
