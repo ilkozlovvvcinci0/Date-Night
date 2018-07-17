@@ -24,13 +24,12 @@ class Messages extends Component {
         }
       }
     }
-    return loggedInUserMessages;
+    return (<div>Hello World!</div>);
   }
-
 
   render() {
     return ( 
-      <div> </div>
+      <div> {this.getMessages()} </div>
     );
   }
 }

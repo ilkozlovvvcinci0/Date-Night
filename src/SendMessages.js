@@ -17,7 +17,7 @@ class SendMessages extends Component {
 
   handleSend() {
 		let messages = JSON.parse(localStorage.getItem("messages") || "[]");
-  	messages.push({
+		messages.push({
   		"message": this.state.message,
   		"sender": getUsername(),
   		"recipient": this.props.match.params["user"],
