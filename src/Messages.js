@@ -21,10 +21,11 @@ class Messages extends Component {
       if (message["recipient"] === loggedInUser || message["sender"] === loggedInUser) {
         if (message["recipient"] === particularRecipient || message["sender"] === particularRecipient) {
           loggedInUserMessages.push(message);
+          console.log(message["message"]);
+          return message["message"];
         }
       }
     }
-    return (<div>Hello World!</div>);
   }
 
   render() {

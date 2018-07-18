@@ -34,7 +34,7 @@ class Swipe extends Component {
     let swipeItems = [];
     for (let swipeIndex in interestUsernames) {
       let interestName = interestUsernames[swipeIndex];
-      swipeItems.push((<SwipeItem username={interestUsernames} image={getUserImage(interestName)} key={interestName} />))
+      swipeItems.push((<SwipeItem username={interestName} image={getUserImage(interestName)} key={interestName} />))
     }
 
     return (
