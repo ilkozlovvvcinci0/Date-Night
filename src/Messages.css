@@ -3,19 +3,23 @@
 	flex-direction: row;
 	width: 100%;
 	justify-content: center;
-  align-items: center;
-  margin: 100px 0px;
+	align-items: center;
+	margin: 100px 0px;
+	font-family: geneva;
+	font-size: 1.2em;
 }
 
 .msg-elements-con {
-	display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: flex;
   width: 100%;
+  justify-content: space-evenly;
 }
 
-.message-btn {
-	display: flex;
-	height: 50px;
-	border-radius: 10px;
+.individual-sender {
+	font-style: italic;
+	margin-bottom: 40px;
+}
+
+.individual-msg {
+	margin-bottom: 40px;
 }

@@ -30,15 +30,20 @@ class Messages extends Component {
   }
 
   render() {
-    let threadDivs = [];
+    let senders = [];
+    let threadMessage = [];
     for (let messageIndex in this.state.thread) {
       let message = this.state.thread[messageIndex];
-      threadDivs.push((<div key={messageIndex}>{message['sender']}: {message['message']}</div>));
+      senders.push((<div className="individual-sender" key={messageIndex}> {message ["sender"]} </div>));
+      threadMessage.push((<div className="individual-msg" key={messageIndex}> {message ["message"]} </div>));
     }
 
     return ( 
-      <div className="msg-main-con">
-        <div> {threadDivs} </div>
+      <div className="msg-main-con"> 
+        <div className="msg-elements-con">  
+          <div className="msg-senders"> {senders} </div>
+          <div className="msg-thread-message"> {threadMessage} </div>
+        </div>
       </div>
     );
   }
