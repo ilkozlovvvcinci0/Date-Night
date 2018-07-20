@@ -8,11 +8,14 @@ class MyMatches extends Component {
 		super(props);
     let username = getUsername();
 		this.state = {
-			username: username,
+			matchUsernames: getUserMatches(username),
 
 		};
 
 	}
+
+	
+
 
 
 
@@ -26,11 +29,9 @@ class MyMatches extends Component {
 
 
 	render() {
-		// username = getUsername();
-		// getUserMatches(getUsername);
 
 		return (
-			<div> {this.state.username} </div>
+			<div> {this.state.matchUsernames} </div>
 
 
 
