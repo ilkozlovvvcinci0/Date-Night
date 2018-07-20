@@ -1,9 +1,20 @@
 import React, {Component} from "react";
 import "./MyMatches.css";
+import {getUsername, getUserMatches} from "./Users.js";
 import {Link} from "react-router-dom";
 
 class MyMatches extends Component {
-	
+	constructor(props) {
+		super(props);
+    let username = getUsername();
+		this.state = {
+			username: username,
+
+		};
+
+	}
+
+
 
 
 
@@ -15,9 +26,11 @@ class MyMatches extends Component {
 
 
 	render() {
+		// username = getUsername();
+		// getUserMatches(getUsername);
 
 		return (
-			<div> </div>
+			<div> {this.state.username} </div>
 
 
 
