@@ -78,6 +78,21 @@ img.profile-pic {
 	height: 18%;
 }
 
+.matches-btn {
+	width: 180px;
+	height: 55px;
+	padding-top: 10px;
+	margin: 50px;
+	border-radius: 10px;
+	border-width: 0px;
+  font-size: 1.8em;
+  font-family: geneva;
+  color: #fff;
+  background-color: #990000;
+  text-align: center;
+  text-decoration: none;
+}
+
 .get-swiping-btn {
 	width: 220px;
 	height: 55px;

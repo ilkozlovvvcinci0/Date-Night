@@ -47,6 +47,7 @@ class ProfilePage extends Component {
           </div>
         </div>
           <div className="profile-footer">
+          <Link to="/my-matches" className="matches-btn"> Matches </Link>
           <Link to="/swipe" className="get-swiping-btn"> Get Swiping </Link>
         </div>
        

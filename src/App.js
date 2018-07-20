@@ -4,6 +4,7 @@ import "./App.css";
 import Login from "./Login"; 
 import SignUp from "./SignUp"; 
 import ProfilePage from "./ProfilePage"; 
+import MyMatches from "./MyMatches"; 
 import Swipe from "./Swipe"; 
 import Settings from "./Settings"; 
 import EditProfile from "./EditProfile"; 
@@ -27,6 +28,7 @@ class App extends Component {
           <Route exact path="/login" component={Login}/>
           <Route exact path="/sign-up" component={SignUp}/>
           <Route exact path="/profile-page" component={ProfilePage}/>
+          <Route exact path="/my-matches" component={MyMatches}/>
           <Route exact path="/swipe" component={Swipe}/>
           <Route exact path="/settings" component={Settings}/>
           <Route exact path="/edit-profile" component={EditProfile}/>
