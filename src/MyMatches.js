@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./MyMatches.css";
-import {getUsername, getUserMatches} from "./Users.js";
+import {getUsername, getUserMatches, getUserMatchImages} from "./Users.js";
 import {Link} from "react-router-dom";
 
 class MyMatches extends Component {
@@ -9,31 +9,25 @@ class MyMatches extends Component {
     let username = getUsername();
 		this.state = {
 			matchUsernames: getUserMatches(username),
-
+			getImage: getUserMatchImages()
 		};
-
 	}
 
+
+
+
+
+
+
 	
-
-
-
-
-
-
-
-
-
-
-
 
 
 	render() {
 
 		return (
-			<div> {this.state.matchUsernames} </div>
-
-
+			<div>
+				<div> {this.state.matchUsernames} </div>
+			</div>
 
 
 
@@ -42,5 +36,4 @@ class MyMatches extends Component {
 }
 
 export default MyMatches;
-
 
