@@ -28,7 +28,7 @@ export function isEmailRegistered(email) {
 }
 
 export function getUserImage(username) {
-	return userDatabase[username]["image"];
+	let image = userDatabase[username]["image"];
 }
 
 export function getUserMatches(username) {
@@ -39,13 +39,15 @@ export function getUserMatchImages() {
 	let loggedInUser = getUsername()
 	let matchUsernames = userDatabase[loggedInUser]["matches"];
 
-	let matchImages = []
+		let matchImages = []
 
 	for (let indexOfMatchUsernames in matchUsernames) {
-		let matchUsername = matchUsernames[indexOfMatchUsernames]
-		console.log(matchUsername)
-
+		let matchUsername = matchUsernames[indexOfMatchUsernames];
+		let matchImage = userDatabase[matchUsername]["image"];
+		console.log(matchImage);
 	}
+
+
 }
 
 export function getUsername() {

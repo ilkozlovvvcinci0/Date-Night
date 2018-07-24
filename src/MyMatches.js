@@ -9,7 +9,7 @@ class MyMatches extends Component {
     let username = getUsername();
 		this.state = {
 			matchUsernames: getUserMatches(username),
-			getImage: getUserMatchImages()
+			getImage: getUserMatchImages(),
 		};
 	}
 
