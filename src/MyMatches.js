@@ -15,18 +15,16 @@ class MyMatches extends Component {
 
 
 
-
-
-
-
-	
-
-
 	render() {
 
 		return (
-			<div>
-				<div> {this.state.matchUsernames} </div>
+			<div className = "my-matches-main-con">
+				<div className="my-matches-elements-con">
+					<div> {this.state.matchUsernames} </div>
+			
+
+
+				</div>
 			</div>
 
 

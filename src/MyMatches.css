@@ -1,0 +1,12 @@
+.my-matches-main-con {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 100px;
+}
+
+.my-matches-elements-con {
+	display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+ }

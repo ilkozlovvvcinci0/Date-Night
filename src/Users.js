@@ -39,15 +39,13 @@ export function getUserMatchImages() {
 	let loggedInUser = getUsername()
 	let matchUsernames = userDatabase[loggedInUser]["matches"];
 
-		let matchImages = []
+	let matchImages = []
 
 	for (let indexOfMatchUsernames in matchUsernames) {
 		let matchUsername = matchUsernames[indexOfMatchUsernames];
 		let matchImage = userDatabase[matchUsername]["image"];
 		console.log(matchImage);
 	}
-
-
 }
 
 export function getUsername() {
