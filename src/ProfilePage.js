@@ -10,7 +10,7 @@ class ProfilePage extends Component {
     let username = getUsername();
     this.state = {
       username: username,
-      profilePic: `assets/img/${getUserImage(username)}`
+      profilePic: `assets/img/${getUserImage(username)}`,
     };
   }
   

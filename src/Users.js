@@ -28,7 +28,7 @@ export function isEmailRegistered(email) {
 }
 
 export function getUserImage(username) {
-	let image = userDatabase[username]["image"];
+	return userDatabase[username]["image"];
 }
 
 export function getUserMatches(username) {
