@@ -10,3 +10,11 @@
   width: 100%;
   flex-wrap: wrap;
  }
+
+ .my-match-img-container {
+ 	background-color: black;
+    height: 290px;
+    width: 190px;
+    overflow: hidden;
+    border-radius: 30px;
+}

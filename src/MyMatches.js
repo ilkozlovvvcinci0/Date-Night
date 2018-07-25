@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./MyMatches.css";
-import {getUsername, getUserMatches, getUserMatchImages} from "./Users.js";
+import {getUsername, getUserMatches, getUserMatchImage} from "./Users.js";
 import {Link} from "react-router-dom";
 
 class MyMatches extends Component {
@@ -9,7 +9,7 @@ class MyMatches extends Component {
     let username = getUsername();
 		this.state = {
 			matchUsernames: getUserMatches(username),
-			images: `assets/img/${getUserMatchImages()}`,
+			image: `assets/img/${getUserMatchImage()}`,
 		};
 	}
 
@@ -21,7 +21,10 @@ class MyMatches extends Component {
 			<div className = "my-matches-main-con">
 				<div className="my-matches-elements-con">
 					<div> {this.state.matchUsernames} </div>
-					<img src={this.state.images} className="profile-pic" alt="" />
+          <div className="my-match-img-container"> 
+						<img src={this.state.image} className="profile-pic" alt="" />
+					</div>
+
 
 			
 

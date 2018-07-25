@@ -35,7 +35,7 @@ export function getUserMatches(username) {
 	return userDatabase[username]["matches"];
 }
 
-export function getUserMatchImages() {
+export function getUserMatchImage() {
 	let loggedInUser = getUsername()
 	let matchUsernames = userDatabase[loggedInUser]["matches"];
 
