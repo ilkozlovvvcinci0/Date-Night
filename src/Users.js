@@ -44,8 +44,9 @@ export function getUserMatchImages() {
 	for (let indexOfMatchUsernames in matchUsernames) {
 		let matchUsername = matchUsernames[indexOfMatchUsernames];
 		let matchImage = userDatabase[matchUsername]["image"];
-		console.log(matchImage);
+		matchImages.push(matchImage)
 	}
+	return matchImages;
 }
 
 export function getUsername() {

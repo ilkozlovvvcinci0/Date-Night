@@ -9,7 +9,7 @@ class MyMatches extends Component {
     let username = getUsername();
 		this.state = {
 			matchUsernames: getUserMatches(username),
-			getImage: getUserMatchImages(),
+			images: `assets/img/${getUserMatchImages()}`,
 		};
 	}
 
@@ -21,6 +21,8 @@ class MyMatches extends Component {
 			<div className = "my-matches-main-con">
 				<div className="my-matches-elements-con">
 					<div> {this.state.matchUsernames} </div>
+					<img src={this.state.images} className="profile-pic" alt="" />
+
 			
 
 
