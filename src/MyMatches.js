@@ -13,13 +13,12 @@ class MyMatches extends Component {
 	}
 
 	render() {
-		let getMatches = getUserMatches(getUsername());
 		let matchUsernames = [];
 		let images = [];
 		for (let indexOfMatchUsername in this.state.matchUsernames) {
 			let matchUsername = this.state.matchUsernames[indexOfMatchUsername];
 			matchUsernames.push((<div key={matchUsername}> {matchUsername} </div>));
-			images.push((<SwipeItem key={matchUsername} image={getUserImage(matchUsername)} />))
+			images.push((<SwipeItem username={matchUsername} key={matchUsername} image={getUserImage(matchUsername)} />))
 		}
 
 		return (
