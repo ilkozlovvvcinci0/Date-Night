@@ -25,10 +25,7 @@ class MyMatches extends Component {
 			<div className = "my-matches-main-con">
 				<div className="my-matches-elements-con">
 					<div className="match-usernames"> {matchUsernames} </div>
-					<div> {images} </div>
-
-
-		
+						<div className="img"> {images} </div>
 				</div>
 			</div>
 

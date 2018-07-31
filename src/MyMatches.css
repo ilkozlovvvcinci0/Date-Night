@@ -17,10 +17,20 @@
   justify-content: space-evenly;
 }
 
-.my-match-img-container {
+.img {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/*.my-match-img-container {
 	background-color: black;
   height: 290px;
   width: 190px;
   overflow: hidden;
   border-radius: 30px;
 }
+*/
+
+
+/*<div className="my-match-img-container">*/
