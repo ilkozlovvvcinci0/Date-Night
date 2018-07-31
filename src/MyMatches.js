@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./MyMatches.css";
 import {getUsername, getUserMatches, getUserImage} from "./Users.js";
-import {SwipeItem} from "./SwipeItem.js";
+import {MyMatchesImage} from "./MyMatchesImage.js";
 
 class MyMatches extends Component {
 	constructor(props) {
@@ -18,7 +18,7 @@ class MyMatches extends Component {
 		for (let indexOfMatchUsername in this.state.matchUsernames) {
 			let matchUsername = this.state.matchUsernames[indexOfMatchUsername];
 			matchUsernames.push((<div key={matchUsername}> {matchUsername} </div>));
-			images.push((<SwipeItem username={matchUsername} key={matchUsername} image={getUserImage(matchUsername)} />))
+			images.push((<MyMatchesImage username={matchUsername} key={matchUsername} image={getUserImage(matchUsername)} />))
 		}
 
 		return (
@@ -36,4 +36,3 @@ class MyMatches extends Component {
 }
 
 export default MyMatches;
-
