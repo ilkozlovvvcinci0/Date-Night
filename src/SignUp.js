@@ -42,6 +42,7 @@ class SignUp extends Component {
     let monthOptions = [];
     for (let monthIndex in months) {
       let month = months[monthIndex];
+      console.log(month)
       monthOptions.push((<option value="{month}" key={month}> {month} </option>))
     }
 

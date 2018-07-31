@@ -16,11 +16,16 @@ class MyMatches extends Component {
 
 
 	render() {
+		let matchUsernames = [];
+		for (let indexOfMatchUsername in this.state.matchUsernames) {
+			let matchUsername = this.state.matchUsernames[indexOfMatchUsername];
+			matchUsernames.push((<div className="match-usernames" key={matchUsername}> {matchUsername} </div>));
+		}
 
 		return (
 			<div className = "my-matches-main-con">
 				<div className="my-matches-elements-con">
-					<div> {this.state.matchUsernames} </div>
+					<div> {matchUsernames} </div>
           <div className="my-match-img-container"> 
 						<img src={this.state.image} className="profile-pic" alt="" />
 					</div>
