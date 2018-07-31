@@ -6,9 +6,11 @@ import "./MyMatchesImage.css";
 export class MyMatchesImage extends Component {
   render() {
     let image = "assets/img/" + this.props.image
+    let username = this.props.username
     let userProfile = `/view-user-profile/${this.props.username}`
     return (
       <div className="my-matches-pic-container">
+        <div className="username"> {username} </div>
         <div className="i-btn-con">
           <Link to={userProfile} className="vup-link"><button type="button"
           className="i-btn"> i </button></Link>

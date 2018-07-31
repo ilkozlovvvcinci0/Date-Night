@@ -17,7 +17,7 @@ class MyMatches extends Component {
 		let images = [];
 		for (let indexOfMatchUsername in this.state.matchUsernames) {
 			let matchUsername = this.state.matchUsernames[indexOfMatchUsername];
-			matchUsernames.push((<div key={matchUsername}> {matchUsername} </div>));
+			// matchUsernames.push((<div key={matchUsername}> {matchUsername} </div>));
 			images.push((<MyMatchesImage username={matchUsername} key={matchUsername} image={getUserImage(matchUsername)} />))
 		}
 
