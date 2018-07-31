@@ -13,24 +13,19 @@ class MyMatches extends Component {
 	}
 
 	render() {
-		let matchUsernames = [];
 		let images = [];
 		for (let indexOfMatchUsername in this.state.matchUsernames) {
 			let matchUsername = this.state.matchUsernames[indexOfMatchUsername];
-			// matchUsernames.push((<div key={matchUsername}> {matchUsername} </div>));
-			images.push((<MyMatchesImage username={matchUsername} key={matchUsername} image={getUserImage(matchUsername)} />))
+			images.push((<MyMatchesImage username={matchUsername} key={matchUsername}
+			image={getUserImage(matchUsername)} />))
 		}
 
 		return (
 			<div className = "my-matches-main-con">
 				<div className="my-matches-elements-con">
-					<div className="match-usernames"> {matchUsernames} </div>
-						<div className="img"> {images} </div>
+					<div className="img"> {images} </div>
 				</div>
 			</div>
-
-
-
 		);
 	}
 }
