@@ -1,7 +1,7 @@
 .my-matches-pic-container {
 	background-color: #fff;
-	height: 325px;
-	width: 200px;
+	height: 345px;
+	width: 190px;
 	overflow: hidden;
 	border-radius: 30px;
 }
@@ -10,4 +10,6 @@
 	display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  font-family: arial;
+  font-size: 1.2em;
 }
