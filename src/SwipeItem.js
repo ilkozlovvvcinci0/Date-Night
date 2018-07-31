@@ -3,7 +3,6 @@ import {Link} from "react-router-dom";
 
 export class SwipeItem extends Component {
   render() {
-    // `assets/img/${this.props.image}`
     let image = "assets/img/" + this.props.image
     let userProfile = `/view-user-profile/${this.props.username}`
     return (

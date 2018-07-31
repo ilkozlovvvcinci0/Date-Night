@@ -35,17 +35,6 @@ export function getUserMatches(username) {
 	return userDatabase[username]["matches"];
 }
 
-export function getUserMatchImage() {
-	let loggedInUser = getUsername()
-	let matchUsernames = userDatabase[loggedInUser]["matches"];
-	console.log(matchUsernames)
-	// let matchImages = [];
-	// for (let matchUsernamesIndex in matchUsernames) {
-	// 	let matchUsername = matchUsernames[matchUsernamesIndex];
-	// }
-
-}
-
 export function getUsername() {
 	return localStorage.getItem("username");
 }
