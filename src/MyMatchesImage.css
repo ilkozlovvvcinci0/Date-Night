@@ -8,8 +8,8 @@
 
 .elements-con {
 	display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .username {

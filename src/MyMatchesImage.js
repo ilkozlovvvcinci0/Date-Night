@@ -15,7 +15,7 @@ export class MyMatchesImage extends Component {
         <div className="elements-con">
           <Link to={userProfile}> <button type="button" className="i-btn"> i </button></Link>
           <div className="profile-icon"> 
-            <FontAwesome name="comment" size="2x" /> 
+            <FontAwesome name="envelope" size="2x" /> 
             <Link to="/settings" className="message-icon"> </Link>
           </div> 
         </div>
