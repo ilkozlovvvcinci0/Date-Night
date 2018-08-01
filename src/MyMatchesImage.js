@@ -9,14 +9,16 @@ export class MyMatchesImage extends Component {
   render() {
     let image = "assets/img/" + this.props.image
     let username = this.props.username
-    let userProfile = `/view-user-profile/${this.props.username}`
+    let userProfile = `/view-user-profile/${username}`
+    let sendMessage = `/send-messages/${username}`
     return (
       <div className="my-matches-pic-container">
         <div className="elements-con">
-          <Link to={userProfile}> <button type="button" className="i-btn"> i </button></Link>
+          <Link to={userProfile}> <button type="button" className="i-btn"> i </button> </Link>
           <div className="profile-icon"> 
             <FontAwesome name="envelope" size="2x" /> 
-            <Link to="/settings" className="message-icon"> </Link>
+            <Link to={sendMessage}> <button type="button" className="message-icon">
+            </button> </Link>
           </div> 
         </div>
         <div className="username"> {username} </div>
