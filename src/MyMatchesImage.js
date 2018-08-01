@@ -12,9 +12,8 @@ export class MyMatchesImage extends Component {
     let userProfile = `/view-user-profile/${this.props.username}`
     return (
       <div className="my-matches-pic-container">
-        <div className="i-btn-con">
-          <Link to={userProfile} className="vup-link"><button type="button"
-          className="i-btn"> i </button></Link>
+        <div className="elements-con">
+          <Link to={userProfile}> <button type="button" className="i-btn"> i </button></Link>
           <div className="profile-icon"> 
             <FontAwesome name="comment" size="2x" /> 
             <Link to="/settings" className="message-icon"> </Link>

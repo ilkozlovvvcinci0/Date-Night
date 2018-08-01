@@ -1,9 +1,15 @@
 .my-matches-pic-container {
 	background-color: #fff;
-	height: 345px;
-	width: 190px;
-	overflow: hidden;
+	height: 260px;
+	width: 180px;
+	/*overflow: hidden;*/
 	border-radius: 30px;
+}
+
+.elements-con {
+	display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
 }
 
 .username {
@@ -12,11 +18,4 @@
   margin-bottom: 20px;
   font-family: arial;
   font-size: 1.2em;
-}
-
-.i-btn-con {
-	justify-content: center;
-}
-
-.message-icon {
 }
