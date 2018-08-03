@@ -12,13 +12,16 @@
   margin-bottom: 10px;
 }
 
+.mmi-link {
+	color: #fff;
+}
+
 .speech-bubble {
 	position: relative;
 	width: 30px;
 	height: 25px;
 	background: #c0c0c0;
 	border-radius: 6px;
-	/*border-color: #999;*/
 }
 
 .speech-bubble:after {

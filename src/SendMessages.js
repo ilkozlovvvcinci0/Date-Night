@@ -38,7 +38,7 @@ class SendMessages extends Component {
 				
 				<div className="sm-main-body">
 	        <div className="s-msg-con">
-	          <Link to="/messages" className="messages"> Messages </Link>
+	          <Link to={`/messages/${user}`} className="messages"> Messages </Link>
 	        </div>
 	        <div className="ta-btn">
 	          <textarea type="textarea" className="text-area" rows="15" cols="100" value={this.state.message}
