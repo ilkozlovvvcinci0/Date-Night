@@ -14,8 +14,11 @@
 
 .speech-bubble {
 	position: relative;
+	width: 30px;
+	height: 25px;
 	background: #bb79ad;
-	border-radius: .4em;
+	border-radius: 6px;
+
 }
 
 .speech-bubble:after {
@@ -25,12 +28,12 @@
 	left: 50%;
 	width: 0;
 	height: 0;
-	border: 0.438em solid transparent;
+	border: 12px solid transparent;
 	border-top-color: #bb79ad;
 	border-bottom: 0;
 	border-left: 0;
-	margin-left: -0.219em;
-	margin-bottom: -0.437em;
+	margin-left: -6px;
+	margin-bottom: -12px;
 }
 
 .username {
