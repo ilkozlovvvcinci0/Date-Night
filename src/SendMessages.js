@@ -60,23 +60,3 @@ class SendMessages extends Component {
 }
 
 export default withRouter(SendMessages);
-
-
-
-
-
-
-
-
-
-
-        
-  
-
-		 
-			  	
-   
-
-
-
-

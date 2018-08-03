@@ -15,11 +15,7 @@ export class MyMatchesImage extends Component {
       <div className="my-matches-pic-container">
         <div className="elements-con">
           <Link to={userProfile}> <button type="button" className="i-btn"> i </button> </Link>
-          <div className="profile-icon"> 
-            <FontAwesome name="envelope" size="2x" /> 
-            <Link to={sendMessage}> <button type="button" className="message-icon">
-            </button> </Link>
-          </div> 
+          <Link to={sendMessage}> <button type="button" className="speech-bubble"> </button> </Link>
         </div>
         <div className="username"> {username} </div>
         <img src={image} className="profile-pic" alt="" />
