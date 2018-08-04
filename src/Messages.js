@@ -44,10 +44,17 @@ class Messages extends Component {
     return ( 
       <div className="msg-main-con"> 
         <div className="msg-elements-con">  
-          <Link to="/my-matches" className="matches-btn"> Matches </Link>
-          <Link to={`/send-messages/${user}`} className="send-message"> Send Message </Link>          <div className="msg-senders"> {senders} </div>
-          <div className="msg-thread-message"> {threadMessage} </div>
-      </div>
+          
+          <div className="messages-header">
+            <Link to="/my-matches" className="messages-matches-btn"> Matches </Link>
+            <Link to={`/send-messages/${user}`} className="messages-send-message-btn"> Send Message </Link>          
+          </div>
+          <div className="msg-con">
+            <div className="msg-senders"> {senders} </div>
+            <div className="msg-thread-message"> {threadMessage} </div>
+          </div>
+          
+        </div>
       </div>
     );
   }
