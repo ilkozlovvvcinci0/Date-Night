@@ -1,7 +1,6 @@
 .my-matches-main-con {
   display: flex;
   flex-direction: row;
-  width: 100%;
   margin: 100px;
 }
 

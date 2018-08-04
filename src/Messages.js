@@ -50,14 +50,22 @@ class Messages extends Component {
             <Link to={`/send-messages/${user}`} className="messages-send-message-btn"> Send Message </Link>          
           </div>
 
-          <div className="header-con">
-            <div className="from"> From </div>
-            <div className="message-field"> Message </div>
-          </div>
-          
-          <div className="msg-con">
-            <div className="msg-senders"> {senders} </div>
-            <div className="msg-thread-message"> {threadMessage} </div>
+          <div className="from-sender-con">
+            
+            <div className="from-con">
+            <div className="from-and-below">
+              <div className="from"> From </div>
+              <div className="msg-senders"> {senders} </div>
+            </div>
+            </div>
+            
+            <div className="msg-con">
+            <div className="msg-and-below">
+              <div className="message-field"> Message </div>
+              <div className="msg-thread-message"> {threadMessage} </div>
+            </div>
+            </div>
+            
           </div>
 
         </div>

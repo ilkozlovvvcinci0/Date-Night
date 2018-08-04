@@ -21,39 +21,65 @@
 .messages-header {
   display: flex;
   width: 50%;
-  margin-bottom: 100px;
+  margin: 0 30px 100px 0;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.header-con {
-	display: flex;
+.from-sender-con {
+  display: flex;
   width: 70%;
-  margin-bottom: 40px;
+  margin-left: 60px;
   justify-content: space-around;
-  font-family: arial-black;
-  font-style: italic;
-  font-size: 1.3em;
 }
 
-.msg-con {
+.from-con {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  justify-content: center;
+}
+
+.from-and-below {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.from {
 	display: flex;
-  flex-direction: row;
-  width: 70%;
-  justify-content: space-around;
+	justify-content: center;
+ font-family: arial-black;
+  font-style: italic;
+  font-size: 1.3em;
 }
 
 .msg-senders {
   display: flex;
   flex-direction: column;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.msg-thread-message {
-  display: flex;
+.individual-sender {
+	margin-bottom: 30px;
+}
+
+.msg-con {
+	display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+  width: 55%;
+  justify-content: center;
+}
+
+.msg-and-below {
+	display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
 }
 
 .messages-matches-btn {
@@ -72,6 +98,14 @@
   text-decoration: none;
 }
 
+.message-field {
+	display: flex;
+	justify-content: center;
+ font-family: arial-black;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
 .messages-send-message-btn {
 	display: flex;
 	justify-content: center;
@@ -88,3 +122,18 @@
 	color: #000;
 	text-decoration: none;
 }
+
+.msg-thread-message {
+   display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.individual-msg {
+	margin-bottom: 30px;
+}
+
+
