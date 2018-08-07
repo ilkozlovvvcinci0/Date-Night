@@ -1,7 +1,7 @@
 .my-matches-main-con {
   display: flex;
   flex-direction: row;
-  margin: 100px;
+  margin: 30px;
 }
 
 .my-matches-elements-con {
