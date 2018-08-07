@@ -1,6 +1,6 @@
 let userDatabase = {
 	"Meredith35": {sex: "male", seeking: "female", image: "meredith.jpg", matches: [""], email: "meredith@gmail.com", age: 62, occupation: "retired", about: "Need help finding my teeth..."},
-	"Brady9": {sex: "male", seeking: "female", image: "brady.jpg", matches: ["Lauren87", "Fran3"], email: "brady@gmail.com", age: 30, occupation: "Front-end Developer", about: "Hi, im a big believer in energy and being the best person you can be. Hopefully you're my type ;-)"},
+	"Brady9": {sex: "male", seeking: "female", image: "brady.jpg", matches: ["Lauren87", "Fran3", "Kesha90", "Sal_R", "D.Br0wn"], email: "brady@gmail.com", age: 30, occupation: "Front-end Developer", about: "Hi, im a big believer in energy and being the best person you can be. Hopefully you're my type ;-)"},
 	"Mat8": {sex: "male", seeking: "female", image: "mat.jpg", matches: ["Kesha90"], email: "mat@hotmail.co.uk", age: 33, occupation: "Software Engineer", about: "Hi, lets see if this is as bad as people say haha"},
 	"WaveyDon100": {sex: "male", seeking: "female", image: "wavey.jpg", matches: ["Kesha90"], email: "wdon@yahoo.com", age: 27, occupation: "Personal Trainer", about: "Confident and assertive, always go for what I want. Sagittarius :-)"},
 	"Fran3": {sex: "female", seeking: "male", image: "francesca.jpg", matches: ["Mat8"], email: "franpers@googlemail.com", age: 24, occupation: "Graphic Designer", about: "Quirky/soft rock type. I like beards, Vans, intellect and adventure...and tacos :-)"},
