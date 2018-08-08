@@ -1,19 +1,9 @@
 .my-matches-main-con {
   display: flex;
   flex-direction: row;
-  margin: 30px;
-}
-
-.my-matches-elements-con {
-	display: flex;
   width: 100%;
- }
-
-.match-usernames {
-  display: flex;
-  width: 100%;
-  margin-bottom: 20px;
-  justify-content: space-evenly;
+  margin: 100px 0;
+  justify-content: center;
 }
 
 .img {

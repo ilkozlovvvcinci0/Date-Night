@@ -22,9 +22,7 @@ class MyMatches extends Component {
 
 		return (
 			<div className = "my-matches-main-con">
-				<div className="my-matches-elements-con">
-					<div className="img"> {images} </div>
-				</div>
+				<div className="img"> {images} </div>
 			</div>
 		);
 	}
