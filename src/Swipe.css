@@ -1,8 +1,14 @@
 .swipe-container {
 	display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  justify-content: center;
+  margin: 50px 80px 100px;
+}
+
+.profile-icon-con-2 {
+  display: flex;
+  margin-bottom: 50px;
 }
 
 .swipe-body {
@@ -10,7 +16,6 @@
 	width: 55%;
 	height: 80%;
   flex-direction: column;
-  margin: 80px 100px;
   font-family: geneva;
 }
 

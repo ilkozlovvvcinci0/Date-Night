@@ -5,6 +5,7 @@ import FontAwesome from "react-fontawesome"
 import Carousel from "nuka-carousel";
 import {getUserMatches, getUsername, getUserImage, getInterestUsernames} from "./Users";
 import {SwipeItem} from "./SwipeItem.js";
+import {Link} from "react-router-dom";
 
 class Swipe extends Component {
   constructor(props) {
@@ -38,7 +39,13 @@ class Swipe extends Component {
     }
 
     return (
-      <div className="swipe-container">  
+      <div className="swipe-container"> 
+
+        <div className="profile-icon-con-2"> 
+          <FontAwesome name="user" size="3x" /> 
+          <Link to="/settings" className="icon"></Link>
+        </div> 
+        
         <div className="swipe-body">  
 
           <Carousel

@@ -2,11 +2,21 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	width: 100%;
 	margin-top: 50px;
-	/* align-items: center; */
 	text-align: center;
 	font-family: geneva;
 	font-size: 1.2em;
+}
+
+.profile-icon-con {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.fa-user {
+	color: #999;
 }
 
 .about-con {

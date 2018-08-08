@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import "./MyMatches.css";
 import {getUsername, getUserMatches, getUserImage} from "./Users.js";
 import {MyMatchesImage} from "./MyMatchesImage.js";
+import FontAwesome from "react-fontawesome";
+import {Link} from "react-router-dom";
 
 class MyMatches extends Component {
 	constructor(props) {
@@ -22,6 +24,10 @@ class MyMatches extends Component {
 
 		return (
 			<div className = "my-matches-main-con">
+				<div className="profile-icon-con-3"> 
+		      <FontAwesome name="user" size="3x" /> 
+		      <Link to="/settings" className="icon"></Link>
+    		</div>
 				<div className="img"> {images} </div>
 			</div>
 		);

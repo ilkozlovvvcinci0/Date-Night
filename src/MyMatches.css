@@ -1,9 +1,14 @@
 .my-matches-main-con {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  margin: 100px 0;
-  justify-content: center;
+  margin: 50px 0;
+  /*justify-content: center;*/
+  align-items: center;
+}
+
+.profile-icon-con-3 {
+	display: flex;
 }
 
 .img {

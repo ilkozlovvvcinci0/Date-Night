@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import "./Settings.css"; 
+import FontAwesome from "react-fontawesome";
+import {Link} from "react-router-dom";
 
 class Settings extends Component {
   constructor(props) {
@@ -21,7 +23,12 @@ class Settings extends Component {
   render() {
     return (
       <div className="settings-body">
-        
+
+        <div className="profile-icon-con"> 
+          <FontAwesome name="user" size="3x" /> 
+          <Link to="/settings" className="icon"></Link>
+        </div>
+          
         <div className="location-con">
           <div> Location: </div>
           <div className="location-a"> My Current Location </div>
