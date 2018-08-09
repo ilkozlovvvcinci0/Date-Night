@@ -41,7 +41,7 @@ class SendMessages extends Component {
 	          <Link to={`/messages/${user}`} className="messages"> Messages </Link>
 	        </div>
 	        <div className="ta-btn">
-	          <textarea type="textarea" className="text-area" rows="15" cols="100" value={this.state.message}
+	          <textarea type="textarea" className="text-area" rows="8" cols="60" value={this.state.message}
 	          onChange={this.handleChange}></textarea>
 	          <div className="btn-send"><button className="send" onClick={this.handleSend}> Send </button></div>
 	        </div>
