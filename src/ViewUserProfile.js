@@ -1,11 +1,11 @@
 import React from "react";
 import "./ViewUserProfile.css"; 
-import {getUserAge, getUserOccupation, getUserAboutMe} from "./Users.js"; 
+import {getUserImage, getUserAge, getUserOccupation, getUserAboutMe} from "./Users.js"; 
 import {withRouter} from 'react-router';
 
 export class ViewUserProfile extends React.Component {
   render() {
-    const {user} = this.props.match.params
+    const {user} = this.props.match.params;
     return (
       <div>
         <div className="vup-header">
@@ -17,6 +17,9 @@ export class ViewUserProfile extends React.Component {
         </div>
 
         <div className="vup-main-body">
+          <div className="vup-pic-container">
+            <img src={(`../assets/img/${getUserImage(user)}`)} className="profile-pic" alt="" />
+          </div>
           <div className="about-me"> {getUserAboutMe(user)} </div>
         </div>
       </div>

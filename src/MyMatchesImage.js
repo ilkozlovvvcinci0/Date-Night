@@ -3,8 +3,6 @@ import "./MyMatchesImage.css";
 import {Link} from "react-router-dom";
 import FontAwesome from "react-fontawesome";
 
-
-
 export class MyMatchesImage extends Component {
   render() {
     let image = "assets/img/" + this.props.image

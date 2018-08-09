@@ -30,15 +30,24 @@
 
 .vup-main-body {
 	display: flex;
+  flex-direction: column;
   align-items: center;
   font-family: geneva;
   font-size: 1.2em;
-  margin: 100px 250px;
   line-height: 1.9em;
 }
 
-.about {
+.vup-pic-container {
+  background-color: black;
+  height: 360px;
+  width: 240px;
+  /*overflow: hidden;*/
+  border-radius: 30px;
+}
+
+.about-me {
 	display: flex;
 	flex-direction: row;
   justify-content: center;
+  margin-top: 50px;
 }
