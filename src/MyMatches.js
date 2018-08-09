@@ -25,8 +25,7 @@ class MyMatches extends Component {
 		return (
 			<div className = "my-matches-main-con">
 				<div className="profile-icon-con-3"> 
-		      <FontAwesome name="user" size="3x" /> 
-		      <Link to="/settings" className="icon"></Link>
+		      <Link to="/profile-page" className="icon"> <FontAwesome name="user" size="3x" /> </Link>
     		</div>
 				<div className="img"> {images} </div>
 			</div>

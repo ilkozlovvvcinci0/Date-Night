@@ -21,6 +21,12 @@
 	text-align: center;
 }
 
+.icon-con {
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+}
+
 .icon {
 	text-decoration: none;
 	color: #999;

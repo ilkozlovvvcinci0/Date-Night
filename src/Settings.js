@@ -24,9 +24,8 @@ class Settings extends Component {
     return (
       <div className="settings-body">
 
-        <div className="profile-icon-con"> 
-          <FontAwesome name="user" size="3x" /> 
-          <Link to="/settings" className="icon"></Link>
+        <div className="profile-icon-con">  
+          <Link to="/profile-page" className="icon"> <FontAwesome name="user" size="3x" /> </Link>
         </div>
           
         <div className="location-con">

@@ -42,8 +42,7 @@ class Swipe extends Component {
       <div className="swipe-container"> 
 
         <div className="profile-icon-con-2"> 
-          <FontAwesome name="user" size="3x" /> 
-          <Link to="/settings" className="icon"></Link>
+          <Link to="/profile-page" className="icon"> <FontAwesome name="user" size="3x" /> </Link>
         </div> 
         
         <div className="swipe-body">  

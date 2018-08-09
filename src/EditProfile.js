@@ -7,10 +7,9 @@ class EditProfile extends Component {
   render() {
     return (
       <div className="edit-body">
-       <div className="profile-icon-con"> 
+       <Link to = "/profile-page" className="profile-icon-con"> 
           <FontAwesome name="user" size="3x" /> 
-          <Link to="/settings" className="icon"></Link>
-        </div>
+        </Link>
         <div className="about-con">
           <div className="title-margin"> About </div>
             <textarea className="text-area" rows="10" cols="85"></textarea>
