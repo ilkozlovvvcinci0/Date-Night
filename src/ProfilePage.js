@@ -20,8 +20,7 @@ class ProfilePage extends Component {
         <div className="profile-header">
           
           <div className="profile-icon"> 
-            <FontAwesome name="cog" size="4x" /> 
-            <Link to="/settings" className="icon"> Settings </Link>
+            <Link to="/settings" className="icon"> <FontAwesome name="cog" size="4x" />  </Link>
           </div> 
 
           <div className="profile-icon"> 
@@ -31,8 +30,7 @@ class ProfilePage extends Component {
 
 
           <div className="profile-icon">                       
-            <FontAwesome name="pencil" size="4x" /> 
-            <Link to="/edit-profile" className="icon"> Edit Profile </Link>
+            <Link to="/edit-profile" className="icon"> <FontAwesome name="pencil" size="4x" />  </Link>
           </div>
 
         </div>
