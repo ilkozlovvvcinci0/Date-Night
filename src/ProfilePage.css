@@ -32,6 +32,10 @@
 	color: #999;
 }
 
+.user-icon {
+	color: red;
+}
+
 .fa-cog {
 	margin-bottom: 10px;
 }

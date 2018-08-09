@@ -24,8 +24,7 @@ class ProfilePage extends Component {
           </div> 
 
           <div className="profile-icon"> 
-            <FontAwesome name="user" size="4x" /> 
-            <Link to="/settings" className="icon"></Link>
+            <FontAwesome name="user" size="4x" style={{ color: "#0000dd" }} /> 
           </div>
 
 
